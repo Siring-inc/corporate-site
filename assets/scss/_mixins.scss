@@ -1,0 +1,27 @@
+$break-point: 1024px;
+$tablet-break-point: 768px;
+$mobile-break-point: 500px;
+$small-mobile-break-point: 320px;
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point) {
+        @content;
+    }
+}
+@mixin limitter {
+  width: 100%;
+  max-width: 1120px;
+  min-width: 1024px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+  @include max-screen($break-point: $tablet-break-point) {
+    max-width: 700px;
+    min-width: 280px;
+    padding: 0 40px;
+  }
+  @include max-screen($break-point: $mobile-break-point) {
+    max-width: $mobile-break-point;
+    min-width: 280px;
+    padding: 0 20px;
+  }
+}
