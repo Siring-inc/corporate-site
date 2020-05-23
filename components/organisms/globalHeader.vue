@@ -30,8 +30,9 @@
         nav.global-header__gnav
           globalNav
     .global-header-sticky(:class="{'global-header-sticky--fixed': scrollY > 200}")
-      nav.global-header__gnav
-        globalNav
+      .global-header-sticky__wrap
+        nav.global-header__gnav
+          globalNav
 </template>
 
 <script>
@@ -83,6 +84,9 @@ export default {
   background: #fff;
   padding: 8px 0;
   transition: 0.3s;
+  &__wrap {
+    @include limitter;
+  }
   &--fixed {
     top: 0;
   }
