@@ -105,6 +105,8 @@ export default {
     background: $red;
     @include max-screen($mobile-break-point) {
       font-size: 1.6rem;
+      padding: 16px 20px;
+      width: 100%;
     }
   }
 }
@@ -125,6 +127,9 @@ export default {
     display: inline-flex;
     margin: auto;
   }
+  @include max-screen($mobile-break-point) {
+    flex-direction: column;
+  }
   &__header {
     margin-bottom: 10px;
     display: inline-flex;
@@ -135,6 +140,10 @@ export default {
     @include max-screen($tablet-break-point) {
       margin-right: 20px;
       margin-bottom: 0px;
+    }
+    @include max-screen($mobile-break-point) {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
   &__icon {

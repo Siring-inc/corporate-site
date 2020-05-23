@@ -61,6 +61,9 @@ export default {
         margin-right: 0;
         font-size: 1.2rem;
       }
+      @include max-screen($break-point: 350px) {
+        font-size: 1rem;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -80,6 +83,10 @@ export default {
     @include max-screen($mobile-break-point) {
       font-size: 1.2rem;
       border-color: lighten($text-black, 60%);
+    }
+    @include max-screen($break-point: 350px) {
+      margin-right: 0;
+      font-size: 1rem;
     }
     &:last-child {
       border-right: 0;

@@ -86,6 +86,9 @@ export default {
   transition: 0.3s;
   &__wrap {
     @include limitter;
+    @include max-screen($tablet-break-point) {
+      padding: 0px;
+    }
   }
   &--fixed {
     top: 0;

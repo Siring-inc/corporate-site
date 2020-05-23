@@ -148,6 +148,10 @@ export default {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    @include max-screen($mobile-break-point) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
   }
   &__name {
     color: $red;
@@ -161,6 +165,8 @@ export default {
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
   &__category {
@@ -200,13 +206,16 @@ export default {
   }
   &__image {
     width: 361px;
+    @include max-screen($tablet-break-point) {
+      margin: 0 auto 20px;
+    }
+    @include max-screen($mobile-break-point) {
+      width: 100%;
+    }
     img {
       display: inline-block;
       width: 100%;
       height: auto;
-    }
-    @include max-screen($tablet-break-point) {
-      margin: 0 auto 20px;
     }
   }
   &__title {

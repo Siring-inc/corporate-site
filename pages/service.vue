@@ -65,6 +65,10 @@ div
   @include max-screen($tablet-break-point) {
     padding: 10px;
   }
+  @include max-screen($mobile-break-point) {
+    width: 96%;
+    max-width: 400px;
+  }
   &__wrap {
     @include limitter;
   }
