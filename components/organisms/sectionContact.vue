@@ -32,7 +32,7 @@
                       | FAX
                   .contact-item__content
                     .contact-item__number
-                      | 06-6339-7477
+                      | 06-6339-7286
 
 
 </template>

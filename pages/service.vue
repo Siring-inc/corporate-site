@@ -35,7 +35,7 @@ div
                   .float-tel__label
                     | FAX
                 .float-tel__number
-                  | 06-6339-7477
+                  | 06-6339-7286
           .float-note
             | お電話での受付時間は、AM10:00〜PM5:00です。
 </template>
