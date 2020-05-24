@@ -94,7 +94,7 @@ export default {
   plugins: [
     { src: '~/plugins/jsonld' },
     { src: '~/plugins/moment-filter', ssr: false },
-    { src: '~/plugins/vue-scrollto'}
+    { src: '~/plugins/vue-scrollto' }
     // { src: '~/plugins/ga.js', ssr: false },
   ],
   /*
@@ -109,7 +109,18 @@ export default {
     'nuxt-webfontloader',
     '@nuxtjs/sitemap',
     '@nuxtjs/axios',
-    ['@nuxtjs/moment', ['ja']]
+    ['@nuxtjs/moment', ['ja']],
+    [
+      '@nuxtjs/google-tag-manager',
+      {
+        id: process.env.TAG_MANAGER,
+        layer: 'dataLayer',
+        pageTracking: true,
+        pageViewEventName: 'nuxtRoute',
+        respectDoNotTrack: false,
+        dev: process.env.STAGE !== 'prod' // set to false to disable in dev mode
+      }
+    ]
   ],
   axios: {},
   styleResources: {
