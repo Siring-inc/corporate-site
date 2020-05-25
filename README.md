@@ -1,6 +1,6 @@
 # siring-corporate-site
 
-> My superb Nuxt.js project
+> 株式会社シリング　コーポレートサイト
 
 ## version
 node
