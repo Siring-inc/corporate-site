@@ -2,6 +2,13 @@
 
 > My superb Nuxt.js project
 
+## version
+node
+v11.12.0
+
+npm
+6.14.4
+
 ## Build Setup
 
 ``` bash
