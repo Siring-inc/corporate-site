@@ -1,0 +1,6 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+# 参考 https://blog.cloud-acct.com/posts/blog-netlify-domainsetting/
+# https://diwao.com/2017/07/netlify-redirect-settings-for-original-domain.html
+
+# Redirect default Netlify subdomain to primary domain
+/blank-3   /service:splat  301!
