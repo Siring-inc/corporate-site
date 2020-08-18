@@ -3,4 +3,4 @@
 # https://diwao.com/2017/07/netlify-redirect-settings-for-original-domain.html
 
 # Redirect default Netlify subdomain to primary domain
-/blank-3   /service:splat  301!
+/blank-3   /service  301!
