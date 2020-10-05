@@ -30,6 +30,18 @@ export default {
       })
     }
 
+    // keyword
+    if (
+      typeof this.meta.keyword !== 'undefined' ||
+      this.meta.keyword !== null
+    ) {
+      head.meta.push({
+        hid: 'keyword',
+        property: 'keyword',
+        content: this.meta.keyword
+      })
+    }
+
     // ページタイプ
     if (typeof this.meta.type !== 'undefined') {
       head.meta.push({

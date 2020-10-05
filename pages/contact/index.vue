@@ -69,6 +69,7 @@ export default {
       meta: {
         title: 'お問い合わせ',
         description: `弊社の各種サービス（記帳代行業務その他）に関するお問い合わせ、お見積もりのご依頼などは下記メールフォームまたはお電話にて承ります。`,
+        keyword: `社会福祉法人会計,記帳代行,経理事務代行,経理のアウトソーシング,外部委託,業務委託,会計監査`,
         type: 'article',
         url: `${process.env.BASE_URL}/contact/`
       },

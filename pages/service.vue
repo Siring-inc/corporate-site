@@ -195,6 +195,7 @@ export default {
       meta: {
         title: '記帳代行サービス',
         description: `現金や預金などの管理や経営の意思決定は法人で行い、面倒な伝票作成はシリングにお任せください。`,
+        keyword: `社会福祉法人会計,記帳代行,経理事務代行,経理のアウトソーシング,外部委託,業務委託,会計監査`,
         type: 'article',
         url: `${process.env.BASE_URL}/service/`
       }

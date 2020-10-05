@@ -3,6 +3,7 @@ const { getConfigForBase } = require('./lib/config.js')
 const baseConfig = getConfigForBase([
   'BASE_NAME',
   'BASE_DESCRIPTION',
+  'BASE_KEYWORD',
   'BASE_URL',
   'BASE_OGP',
   'BASE_DIR'
@@ -26,6 +27,11 @@ export default {
         hid: 'description',
         name: 'description',
         content: baseConfig.BASE_DESCRIPTION
+      },
+      {
+        hid: 'keyword',
+        name: 'keyword',
+        content: baseConfig.BASE_KEYWORD
       },
       {
         hid: 'og:site_name',

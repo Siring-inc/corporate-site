@@ -31,6 +31,13 @@ export default {
     sectionCompany
   },
   mixins: [Meta],
+  data() {
+    return {
+      meta: {
+        keyword: `社会福祉法人会計,記帳代行,経理事務代行,経理のアウトソーシング,外部委託,業務委託,会計監査`,
+      }
+    }
+  },
   computed: {
     ...mapState('modules/posts', ['newsItem']),
     breadcrumbs() {
