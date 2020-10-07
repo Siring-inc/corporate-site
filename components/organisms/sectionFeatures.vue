@@ -26,7 +26,7 @@
             <iframe width="450" height="300" src="https://www.youtube.com/embed/HFuliXysMMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       .movie__btn
         p.button-area
-          a(href="https://www.youtube.com/channel/UCcx8Yc7aUyvoTbUHFPmfapQ/featured") セミナー動画をみる
+          a(href="https://www.youtube.com/channel/UCcx8Yc7aUyvoTbUHFPmfapQ/featured" ,target="_blank") セミナー動画一覧をみる
         
 
           
@@ -226,6 +226,7 @@ export default {
   &__btn{
     .button-area{
       margin: 40px 0 0 0;
+      text-align: right;
       a{
         display: inline-flex;
         flex-direction: row;
