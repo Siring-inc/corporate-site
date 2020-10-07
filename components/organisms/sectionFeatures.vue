@@ -17,6 +17,20 @@
               .features-item__title
                 | {{item.title}}
             .features-item__desc(v-html="item.desc")
+      .movie__content
+        .movie-item
+          .
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/d1x04l6kCd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        .movie-item
+          .
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/HFuliXysMMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      .movie__btn
+        p.button-area
+          a(href="https://www.youtube.com/channel/UCcx8Yc7aUyvoTbUHFPmfapQ/featured") セミナー動画をみる
+        
+
+          
+
 </template>
 
 <script>
@@ -187,6 +201,43 @@ export default {
     line-height: 200%;
     @include max-screen($tablet-break-point) {
       width: 60%;
+    }
+  }
+}
+
+.movie{
+  &__content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 20px 0;
+  }
+  &-item{
+    @include max-screen($tablet-break-point) {
+      margin: 0 0 30px;
+    }
+    iframe{
+      @include max-screen($tablet-break-point) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__btn{
+    .button-area{
+      margin: 40px 0 0 0;
+      a{
+        display: inline-flex;
+        flex-direction: row;
+        color: #fff;
+        background: #96B54F;
+        border-radius: 44px;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        letter-spacing: 0.06em;
+        font-weight: 800;
+      }
     }
   }
 }
