@@ -211,7 +211,7 @@ export default {
               priceList: [
                 {
                   term: '一律',
-                  desc: '396,000円 / 月'
+                  desc: '396,000円 / 年'
                 }
               ]
             }
