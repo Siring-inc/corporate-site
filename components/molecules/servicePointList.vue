@@ -37,7 +37,7 @@ export default {
     width: 23px;
     height: 28px;
     margin-right: 7px;
-    background-image: url(~assets/img/icon/icon-flower-red.png);
+    background-image: url(~assets/img/icon/icon-flower-blue.png);
     background-repeat: no-repeat;
     background-size: contain;
   }

@@ -57,7 +57,7 @@ export default {
         },
         {
           link: '/service',
-          name: '記帳代行サービス'
+          name: '会計業務サポート'
         },
         {
           link: '/company',

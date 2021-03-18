@@ -25,7 +25,8 @@
     margin-bottom: 40px;
     text-align: center;
     /deep/ .marker {
-      background: linear-gradient(transparent 50%, lighten($red, 30%) 50%);
+      // background: linear-gradient(transparent 50%, lighten($red, 30%) 50%);
+      background:linear-gradient(transparent 50%, lighten(#77B4CE, 30%) 50%);
       font-size: 2rem;
       line-height: 160%;
       font-weight: 600;
@@ -131,7 +132,7 @@ export default {
               type: 'text'
             },
             {
-              text: `<span class="marker">「誰かにチェックしてほしい気持ち」</span> <br /> <span class="marker">「コストをかけたくない気持ち」</span>`,
+              text: `<span class="marker">「誰かにチェックしてほしい気持ち」</span> &emsp; <span class="marker">「コストをかけたくない気持ち」</span>`,
               type: 'text'
             },
             {
@@ -156,109 +157,6 @@ export default {
                 {
                   term: '11,000円 / 月',
                   desc: '（1施設1事業）'
-                }
-              ]
-            }
-          ]
-        },
-        accountingSupport: {
-          id: 'accountingSupport',
-          header: {
-            title: '経理担当者サポート',
-            read: `忙しくて経理業務がどうしても後回しになってしまう法人様や
-            <br />専門的な社福会計が苦手な担当者様をサポートします。`
-          },
-          content: [
-            {
-              text:
-                '会計担当者様と協力しながら、伝票入力作業の効率化をサポートします。',
-              type: 'text'
-            },
-            {
-              image: {
-                pc: '/service/service-image-pc.png',
-                sp: '/service/service-image-sp.png'
-              },
-              type: 'image'
-            },
-            {
-              text:
-                '伝票入力を通じてお客様の特有の経理業務ルールをしっかりと理解。<br />お客様にマッチした改善提案を行うことでお客様の負担感を軽減し、<br />あまり無理なく適正な会計を目指します。',
-              type: 'text'
-            }
-          ],
-          price: [
-            {
-              title: '月額報酬',
-              desc: `※セグメント・拠点数により報酬は変動します。<br />※配賦基準数により報酬は変動します。`,
-              priceList: [
-                {
-                  term: '保育園',
-                  desc: '44,000円 / 月'
-                },
-                {
-                  term: '障害施設',
-                  desc: '44,000円 / 月'
-                },
-                {
-                  term: '介護施設',
-                  desc: '132,000円 / 月'
-                }
-              ]
-            },
-            {
-              title: '決算書・附属明細作成報酬',
-              priceList: [
-                {
-                  term: '一律',
-                  desc: '396,000円 / 年'
-                }
-              ]
-            }
-          ]
-        },
-        correctSupport: {
-          id: 'correctSupport',
-          header: {
-            title: '正しい決算書サポート',
-            read: `社会福祉法人特有の特殊な会計処理をしっかりチェックし、<br />
-            正確でスムーズな決算書の作成をサポートします。`
-          },
-          pointList: [
-            '事業区分間の繰入・貸付',
-            '拠点区分間の繰入・貸付',
-            'サービス区分間の繰入・貸付',
-            '積立金・積立資産',
-            '国庫補助金等特別積立金',
-            '固定資産の取得・除却',
-            '注記・財産目録'
-          ],
-          price: [
-            {
-              title: '月額報酬',
-              desc: `※セグメント・拠点数により報酬は変動します。
-              <br />※配賦基準数により報酬は変動します。`,
-              priceList: [
-                {
-                  term: '保育園',
-                  desc: '66,000円 / 月'
-                },
-                {
-                  term: '障害施設',
-                  desc: '66,000円 / 月'
-                },
-                {
-                  term: '介護施設',
-                  desc: '165,000円 / 月'
-                }
-              ]
-            },
-            {
-              title: '決算書・附属明細作成報酬',
-              priceList: [
-                {
-                  term: '一律',
-                  desc: '頂きません。'
                 }
               ]
             }

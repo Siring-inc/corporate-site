@@ -73,19 +73,24 @@ export default {
       clientRectY: 0,
       navItem: [
         {
-          title: `会計チェック<br />「Light」`,
+          title: `小規模法人<br />サポートプラン`,
           link: '/service',
-          scrollTo: '#serviceLight'
+          scrollTo: '#serviceSmall'
         },
         {
-          title: `経営担当者<br />サポート`,
+          title: `中規模法人<br />サポートプラン`,
           link: '/service',
-          scrollTo: '#accountingSupport'
+          scrollTo: '#serviceMedium'
         },
         {
-          title: `正しい決算書<br />サポート`,
+          title: `大規模法人<br />サポートプラン`,
           link: '/service',
-          scrollTo: '#correctSupport'
+          scrollTo: '#serviceLarge'
+        },
+        {
+          title: `オプション<br />サービス`,
+          link: '/service',
+          scrollTo: '#optionService'
         }
       ]
     }
