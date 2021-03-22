@@ -1,5 +1,6 @@
 <template lang="pug">
 .price
+  //- .price_head(v-html="priceData.head")
   .price__item(v-for="(item, index) in priceData" :key="index")
     .price__left
       .price__title

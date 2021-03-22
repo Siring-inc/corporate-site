@@ -1,0 +1,53 @@
+<template lang="pug">
+.service-point
+  .service-point__head(v-html="pointList.head")  
+  .service-point__item(v-for="(item, index) in pointList.content" :key="index")
+    .service-point__icon
+    .service-point__label
+      | {{item}}
+</template>
+
+<script>
+export default {
+  props: {
+    pointList: {
+      default() {
+        return {}
+      },
+      type: Array
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.service-point {
+  // display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 710px;
+  margin: auto;
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    display: block;
+    width: 23px;
+    height: 28px;
+    margin-right: 7px;
+    background-image: url(~assets/img/icon/icon-checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__label {
+    font-size: 1.4rem;
+    line-height: 120%;
+    @include max-screen($tablet-break-point) {
+      font-size: 1.2rem;
+    }
+  }
+}
+</style>
