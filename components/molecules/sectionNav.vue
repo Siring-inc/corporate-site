@@ -90,7 +90,7 @@ export default {
         {
           title: `オプション<br />サービス`,
           link: '/service',
-          scrollTo: '#optionService'
+          scrollTo: '#serviceLight'
         }
       ]
     }

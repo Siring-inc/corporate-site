@@ -7,7 +7,7 @@
   )
     .service-item
       .service-item__header
-        serviceComment(:commentData='item.roundCmt')
+        serviceComment(v-if="item.id === 'serviceSmall'"　,:commentData='item.roundCmt')
         serviceHeader(:headerData='item.header')
       .service-item__content
         .service-content(v-for='(item, index) in item.content', :key='index')
@@ -20,11 +20,9 @@
         .service-item-recommend__frame 
           .service-item-recommend__left
             .service-item-recommend__head(v-for='(item, index) in item.recommendFrame.title', :key='index')
-              //- .service-item-recommend__head(v-html="item.title")
               | {{item}}
           .service-item-recommend__right
             .service-item-recommend__content(v-for='(item, index) in item.recommendFrame.content', :key='index')
-              //- .service-item-recommend__content(v-html="item.content")  
               | {{item}}
         //-  要Check!!      
       .service-item__list
@@ -123,7 +121,7 @@
       padding-top: 60px;
     }
     &:first-child {
-      padding-top: 0;
+      // padding-top: 0;
     }
     &:last-child {
       margin-bottom: 0;
@@ -271,20 +269,6 @@ export default {
               type: 'text',
             },
           ],
-          // recommendFrame: [
-          //   {
-          //     title: '施設基準',
-          //     content: '：1拠点で事業を運営（単独保育園、作業所など）',
-          //   },
-          //   {
-          //     title: '経理スタッフ',
-          //     content: '：専任の経理担当者が1名以下',
-          //   },
-          //   {
-          //     title: '予算基準',
-          //     content: '：予算のザックリ感が否めない',
-          //   },
-          // ],
           recommendFrame: {
               title:[ '施設基準','経理スタッフ基準','予算基準'],
               content:[ '：1拠点で事業を運営（単独保育園、作業所など）','：専任の経理担当者が1名以下','：予算のザックリ感が否めない']
@@ -305,7 +289,7 @@ export default {
             title:`<span class="headitem">サービス内容 </span> <hr/>`,
             // pc: '/service/service-image-pc.png',
             // sp: '/service/service-image-sp.png'
-            pc: '/service/service-content-image-pc.png',
+            pc: '/service/service-content-image-min-pc.png',
             // type: 'image',
           },
           reward:{
@@ -349,8 +333,156 @@ export default {
           ],
           }
         },
-      },
+        serviceMedium: {
+          id: 'serviceMedium',
+          header: {
+            title: '中規模法人 サポート',
+            read: `「決算書サポート」プラン`,
+          },
+          content: [
+            {
+              text: `経理部門のレベルアップや効率化を図りたい<br/>
+                    法人様向けのプランです。`,
+              type: 'text',
+            },
+            {
+              text: `<span class="headitem">こんな法人様へオススメ。</span> <hr/>`,
+              type: 'text',
+            },
+          ],
+          recommendFrame: {
+              title:[ '施設基準','経理スタッフ基準','予算基準'],
+              content:[ '：2～3拠点で事業を運営','：各拠点に出納担当者がいる',' ：予算は本部で作成している']
+          },
+          pointList: 
+            {
+              head: '<span class="headitem">要Check!!</span> <hr/>',
+              content: [
+                '主となるスタッフに業務負担がかかっている',
+                '主となる経理スタッフがもし退職すると業務が滞る可能性がある',
+                '主となるスタッフにもっと経営的な業務をしてほしい',
+                '経理スタッフが気軽に相談できる相手がほしい',
+                '社福会計がわかる人材がなかなか見つからない',
+                '顧問の専門家が頼りない',
+              ],
+            },
+          serviceChart : {
+            title:`<span class="headitem">サービス内容 </span> <hr/>`,
+            pc: '/service/service-content-image-medium-pc.png',
+          },
+          reward:{
+            head: '<span class="headitem">報酬 </span> <hr/>',
+          price: [
+            {
+              title: '月額報酬',
+              priceList: [
+                {
+                  term: '障害',
+                  desc: '55,000円 / 月',
+                },
+                {
+                  term: '保育',
+                  desc: '44,000円 / 月',
+                },
+                {
+                  term: '介護',
+                  desc: '165,000円 / 月',
+                },
+              ],
+            },
+            {
+              title: '決算書・附属明細作成報酬',
+              priceList: [
+                {
+                  term: '障害',
+                  desc: '220,000円 / 年',
+                },
+                {
+                  term: '保育',
+                  desc: '220,000円 / 年',
+                },
+                {
+                  term: '介護',
+                  desc: '330,000円 / 年',
+                },
+              ],
+            },
+          ],
+          }
+        },
+        serviceMax: {
+          id: 'serviceLarge',
+          header: {
+            title: '大規模法人 サポート',
+            read: `「経理スタッフサポート」プラン`,
+          },
+          content: [
+            {
+              text: `経理スタッフの業務環境を改善したい法人様や<br/>
+                    一時的な人員不足を解消したい法人様向けのプランです。`,
+              type: 'text',
+            },
+            {
+              text: `<span class="headitem">こんな法人様へオススメ。</span> <hr/>`,
+              type: 'text',
+            },
+          ],
+          recommendFrame: {
+              title:[ '施設基準','経理スタッフ基準','予算基準'],
+              content:[ '：4拠点以上で事業を運営','：各拠点に専任の経理担当者がいる','：各拠点で作成している']
+          },
+          pointList: 
+            {
+              head: '<span class="headitem">要Check!!</span> <hr/>',
+              content: [
+                '産休や介護休暇など、一時的にスタッフの穴をうめたい',
+                '経理スタッフの残業が多くなっているので業務量を削減したい',
+                '社福会計に詳しくないので、フォローしてほしい',
+                '経理スタッフの入れ替わりが多いのでなんとかしたい'
+              ],
+            },
+          serviceChart : {
+            title:`<span class="headitem">サービス内容 </span> <hr/>`,
+            pc: '/service/service-content-image-max-pc.png',
+          },
+          reward:{
+            head: '<span class="headitem">報酬 </span> <hr/>',
+            price: [
+              {
+                title: '月額報酬',
+                priceList: [
+                  {
+                    term: '障害',
+                    desc: '55,000円 / 月',
+                  },
+                  {
+                    term: '保育',
+                    desc: '55,000円 / 月',
+                  },
+                  {
+                    term: `介護 <span class="pricenote">（特養含む拠点）</span>`,
+                    desc: '88,000円 / 月',
+                  },
+                  {
+                    term: `介護 <span class="pricenote">（上記以外）</span>`,
+                    desc: '55,000円 / 月',
+                  }
+                ],
+              },
+              {
+                title: '決算書・附属明細作成報酬',
+                priceList: [
+                  {
+                    term: '',
+                    desc: '頂きません',
+                  }
+                ],
+              },
+            ],
+          }
+        }
+      }
     }
-  },
+  }
 }
 </script>

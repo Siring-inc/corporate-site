@@ -17,10 +17,11 @@ export default {
 
 <style lang="scss" scoped>
 .service-header__comment {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin: 1.5em 15px 1.5em 0;
-  padding: 0 5px;
+  // margin: 1.5em 15px 1.5em 0;
+  margin: -1.5em -2px 5.5em -280px;
+  padding: 25px 5px;
   width: 90px;
   height: 90px;
   line-height:17px;
@@ -35,11 +36,13 @@ export default {
 .service-header__comment:before {
   content: "";
   position: absolute;
-  bottom: -8px;
-  right: -8px;
+  bottom: 12px;
+  right: -17px;
   margin-top: -15px;
-  border: 15px solid transparent;
-  border-left: 15px solid $red;
+  border: 7px solid transparent;
+  // border: 15px solid transparent;
+  border-left: 25px solid $red;
+  // border-left: 15px solid $red;
   z-index: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
