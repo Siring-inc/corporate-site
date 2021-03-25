@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import priceItem from '~/components/atoms/priceItem.vue'
+import priceItem from '~/components/atoms/priceItemBlue.vue'
 
 export default {
   components: {
@@ -34,18 +34,17 @@ export default {
 .price {
   background: #fff;
   border-radius: 20px;
-  border: 2px dotted $red;
+  border: 2px dotted $blue;
   padding: 16px;
   box-sizing: border-box;
   max-width: 665px;
   margin: auto;
-  margin-bottom: 40px;
   &__item {
     display: flex;
     flex-direction: row;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid $red;
+    border-bottom: 1px solid $blue;
     @include max-screen($tablet-break-point) {
       flex-direction: column;
     }
@@ -58,7 +57,7 @@ export default {
   &__left {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     @include max-screen($tablet-break-point) {
       width: 100%;
       margin-bottom: 10px;
@@ -74,7 +73,7 @@ export default {
     font-size: 2rem;
     line-height: 160%;
     margin-bottom: 4px;
-    color: $red;
+    color: $blue;
     font-weight: 500;
   }
   &__desc {

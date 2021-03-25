@@ -25,7 +25,6 @@
     margin-bottom: 40px;
     text-align: center;
     /deep/ .marker {
-      // background: linear-gradient(transparent 50%, lighten($red, 30%) 50%);
       background:linear-gradient(transparent 50%, lighten(#77B4CE, 30%) 50%);
       font-size: 2rem;
       line-height: 160%;
@@ -106,9 +105,9 @@
 </style>
 
 <script>
-import priceArea from '~/components/molecules/priceArea'
+import priceArea from '~/components/molecules/priceAreaBlue'
 import servicePointList from '~/components/molecules/servicePointList'
-import serviceHeader from '~/components/molecules/serviceHeader'
+import serviceHeader from '~/components/molecules/serviceHeaderBlue'
 
 export default {
   components: {

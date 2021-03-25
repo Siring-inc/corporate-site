@@ -45,8 +45,12 @@
 <style lang="scss" scoped>
 .service-chart{
   &__image {
-    width: 100%;
+
+    width: 80%;
     margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     @include max-screen($tablet-break-point) {
       margin-bottom: 40px;
     }
@@ -108,6 +112,11 @@
   display: flex;
   flex-direction: column;
   &__item {
+    background-color: #fff;
+    box-shadow: 15px 15px #FAE3E3;
+    // background: #fff;
+    border-radius: 20px;
+    width: 100%;
     padding-top: 80px;
     margin-bottom: 40px;
     @include max-screen($tablet-break-point) {
@@ -122,6 +131,7 @@
   }
 }
 .service-item {
+  
   &__header {
     font-size: 2rem;
       color: $red;

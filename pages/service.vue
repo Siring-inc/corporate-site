@@ -6,7 +6,9 @@ div
   .section.section--bg-red
     .section__wrap
       sectionServiceSmall
-      sectionService
+  .section.section--bg-blue
+    .section__wrap
+      sectionServiceLight
       sectionServiceLegal
       sectionServiceFinancial
   sectionAbout
@@ -181,7 +183,7 @@ import sectionContact from '~/components/organisms/sectionContact'
 import sectionTopMessage from '~/components/organisms/servicePageTopMessage'
 import sectionNav from '~/components/molecules/sectionNav'
 import sectionServiceSmall from '~/components/organisms/servicePageSmall'
-import sectionService from '~/components/organisms/servicePageServiceLight'
+import sectionServiceLight from '~/components/organisms/servicePageServiceLight'
 import sectionServiceLegal from '~/components/organisms/servicePageServiceLegal'
 import sectionServiceFinancial from '~/components/organisms/servicePageServiceFinancial'
 import sectionAbout from '~/components/organisms/servicePageAbout'
@@ -193,7 +195,7 @@ export default {
     sectionTopMessage,
     sectionNav,
     sectionServiceSmall,
-    sectionService,
+    sectionServiceLight,
     sectionServiceLegal,
     sectionServiceFinancial,
     sectionAbout
