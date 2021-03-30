@@ -20,14 +20,14 @@ export default {
   position: absolute;
   display: inline-block;
   // margin: 1.5em 15px 1.5em 0;
-  margin: -1.5em -2px 5.5em -280px;
-  padding: 25px 5px;
-  width: 90px;
-  height: 90px;
-  line-height:17px;
+  margin: -0.9em -2px 5.5em -254px;
+  padding: 17px 5px;
+  width: 70px;
+  height: 70px;
+  line-height:13px;
   text-align: center;
   color: #FFF;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   background: $red;
   border-radius: 50%;
@@ -36,10 +36,10 @@ export default {
 .service-header__comment:before {
   content: "";
   position: absolute;
-  bottom: 12px;
-  right: -17px;
+  bottom: 4px;
+  right: -14px;
   margin-top: -15px;
-  border: 7px solid transparent;
+  border: 10px solid transparent;
   // border: 15px solid transparent;
   border-left: 25px solid $red;
   // border-left: 15px solid $red;

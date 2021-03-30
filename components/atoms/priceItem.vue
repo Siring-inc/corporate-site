@@ -32,8 +32,10 @@ export default {
   &__term {
     text-align: left;
     font-size: 2.2rem;
-    line-height: 160%;
+    line-height: 135%;
     width: 260px;
+    margin-left: 27px;
+    margin-top: 7px;
     @include max-screen($tablet-break-point) {
       font-size: 1.8rem;
       width: 100%;
@@ -46,7 +48,9 @@ export default {
     text-align: right;
     width: 100%;
     font-size: 2.2rem;
-    line-height: 160%;
+    line-height: 135%;
+    margin-right: 11px;
+    margin-top: 7px;
     @include max-screen($tablet-break-point) {
       font-size: 1.8rem;
     }

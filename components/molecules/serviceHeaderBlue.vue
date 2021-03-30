@@ -40,7 +40,7 @@ export default {
     color: $blue;
     font-weight: 600;
     line-height: 120%;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
     text-align: center;
     @include max-screen($tablet-break-point) {
       font-size: 3.2rem;
@@ -52,7 +52,7 @@ export default {
   &__read {
     font-size: 2.4rem;
     letter-spacing: 0.08em;
-    line-height: 150%;
+    line-height: 140%;
     color: $orange-darken;
     text-align: center;
     @include max-screen($tablet-break-point) {

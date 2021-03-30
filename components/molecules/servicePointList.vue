@@ -37,13 +37,14 @@ export default {
     width: 23px;
     height: 28px;
     margin-right: 7px;
+    margin-left: 19px;
     background-image: url(~assets/img/icon/icon-flower-blue.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
   &__label {
-    font-size: 1.4rem;
-    line-height: 120%;
+    font-size: 1.8rem;
+    line-height: 173%;
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
     }

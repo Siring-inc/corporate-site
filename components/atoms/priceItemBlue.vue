@@ -25,6 +25,7 @@ export default {
   flex-direction: row;
   text-align: right;
   width: 340px;
+  margin-right: 10px;
   @include max-screen($tablet-break-point) {
     width: 100%;
     text-align: left;

@@ -22,14 +22,14 @@
     font-size: 1.4rem;
     letter-spacing: 0.04em;
     line-height: 160%;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     text-align: center;
     /deep/ .marker {
       background:linear-gradient(transparent 50%, lighten(#77B4CE, 30%) 50%);
       font-size: 2rem;
       line-height: 160%;
       font-weight: 600;
-      margin: 0 4px;
+      margin: 0 2px;
       @include max-screen($mobile-break-point) {
         font-size: 1.8rem;
       }
@@ -65,7 +65,8 @@
   }
 }
 .service-list {
-  padding: 70px 0;
+  // padding: 70px 0;
+  padding: 25px 0;
   display: flex;
   flex-direction: column;
   &__item {
@@ -84,19 +85,19 @@
 }
 .service-item {
   &__header {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     @include max-screen($tablet-break-point) {
       margin-bottom: 30px;
     }
   }
   &__content {
-    margin-bottom: 30px;
+    margin-bottom: 55px;
     @include max-screen($tablet-break-point) {
-      margin-bottom: 15px;
+      margin-bottom: 27px;
     }
   }
   &__list {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     &:last-child {
       margin-bottom: 0;
     }

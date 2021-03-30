@@ -12,7 +12,9 @@ $small-mobile-break-point: 320px;
   max-width: 1120px;
   min-width: 1024px;
   margin: 0 auto;
-  padding: 0 60px;
+  // padding: 0 60px;
+  // Nav 調整
+  padding: 0 0px;
   box-sizing: border-box;
   @include max-screen($break-point: $tablet-break-point) {
     max-width: 700px;

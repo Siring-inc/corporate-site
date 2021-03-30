@@ -35,10 +35,11 @@ export default {
   background: #fff;
   border-radius: 20px;
   border: 2px dotted $blue;
-  padding: 16px;
+  padding: 20px;
   box-sizing: border-box;
-  max-width: 665px;
+  max-width: 709px;
   margin: auto;
+  margin-bottom: 48px;
   &__item {
     display: flex;
     flex-direction: row;
@@ -72,6 +73,7 @@ export default {
   &__title {
     font-size: 2rem;
     line-height: 160%;
+    margin-left: 12px;
     margin-bottom: 4px;
     color: $blue;
     font-weight: 500;
@@ -79,6 +81,7 @@ export default {
   &__desc {
     font-size: 1.2rem;
     line-height: 140%;
+    margin-left: 12px;
   }
 }
 .price-list {

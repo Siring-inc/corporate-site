@@ -29,6 +29,7 @@ div
   }
 }
 .section-nav-list {
+  z-index: 1;
   background: $red-lighten;
   padding: 10px 0;
   &__wrap {

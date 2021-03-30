@@ -17,9 +17,9 @@
 .service-content {
   &__textblack {
     font-size: 1.4rem;
-    letter-spacing: 0.04em;
-    line-height: 160%;
-    margin-bottom: 40px;
+    // letter-spacing: 0.04em;
+    line-height: 135%;
+    margin-bottom: 46px;
     text-align: center;
   }
   &__textyellow {
@@ -44,20 +44,20 @@
   margin: auto;
   text-align:justify ;
   margin-top: 59px;
-
+  line-height: 19px;
   /deep/ .marker {
     color: $orange-darken;
     }
 }
 .service-item {
   &__header {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
     @include max-screen($tablet-break-point) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
   &__content {
-    margin-bottom: 30px;
+    margin-bottom: 43px;
     @include max-screen($tablet-break-point) {
       margin-bottom: 15px;
     }

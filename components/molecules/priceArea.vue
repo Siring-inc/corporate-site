@@ -5,7 +5,7 @@
     .price__left
       .price__title
         | {{item.title}}
-      .price__desc(v-if="item.desc" v-html="item.desc")
+      //- .price__desc(v-if="item.desc" v-html="item.desc")
     .price__right
       .price-list
         .price-list__item(v-for="(item, indexPrice)  in item.priceList" :key="indexPrice")
@@ -40,6 +40,7 @@ export default {
   max-width: 665px;
   margin: auto;
   margin-bottom: 40px;
+  margin-top: 23px;
   &__item {
     display: flex;
     flex-direction: row;
@@ -76,6 +77,8 @@ export default {
     margin-bottom: 4px;
     color: $red;
     font-weight: 500;
+    margin-top: 5px;
+    margin-left: 13px;
   }
   &__desc {
     font-size: 1.2rem;

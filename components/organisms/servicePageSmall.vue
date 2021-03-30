@@ -43,9 +43,9 @@
 <style lang="scss" scoped>
 .service-chart{
   &__image {
-
     width: 80%;
-    margin-bottom: 40px;
+    margin-bottom: 6.8rem;
+    margin-top: 23px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -72,13 +72,13 @@
 }
 .service-content {
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     letter-spacing: 0.04em;
-    line-height: 160%;
-    margin-bottom: 40px;
+    line-height: 140%;
+    margin-bottom: 6.5rem;
     text-align: center;
     /deep/ .headitem {
-      font-size: 2rem;
+      font-size: 2.4rem;
       color: $red;
       font-weight: 600;
       line-height: 120%;
@@ -94,10 +94,13 @@
     /deep/ hr {
       background-color: $red;
       border-color: $red;
-      width: 4rem;
+      width: 5rem;
       height: 0.3rem;
       border-radius: 1rem;
       display: block;
+      margin-top: 18px;
+      // margin-top: 1.4rem;
+      margin-bottom: -4.5rem;
       @include max-screen($mobile-break-point) {
         display: block;
       }
@@ -114,14 +117,17 @@
     box-shadow: 15px 15px #FAE3E3;
     // background: #fff;
     border-radius: 20px;
-    width: 100%;
-    padding-top: 80px;
-    margin-bottom: 40px;
+    width: 90%;
+    // padding-top: 80px;
+    padding-top: 28px;
+    margin-bottom: 128px;
+    margin-left: auto;
+    margin-right: auto;
     @include max-screen($tablet-break-point) {
       padding-top: 60px;
     }
     &:first-child {
-      // padding-top: 0;
+      // padding-top: 0;ß
     }
     &:last-child {
       margin-bottom: 0;
@@ -131,27 +137,29 @@
 .service-item {
   
   &__header {
-    font-size: 2rem;
-      color: $red;
-      font-weight: 600;
-      line-height: 120%;
-      margin-bottom: 16px;
-      text-align: center;
-      @include max-screen($tablet-break-point) {
-        font-size: 3.2rem;
-      }
-      @include max-screen($mobile-break-point) {
-        font-size: 2.4rem;
-      }
-    margin-bottom: 50px;
+    font-size: 2.4rem;
+    color: $red;
+    // letter-spacing: 10px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 16px;
+    text-align: center;
+    @include max-screen($tablet-break-point) {
+      font-size: 3.2rem;
+    }
+    @include max-screen($mobile-break-point) {
+      font-size: 2.4rem;
+    }
+    // margin-bottom: 50px;
     @include max-screen($tablet-break-point) {
       margin-bottom: 30px;
     }
   }
     /deep/ hr {
+      margin-top: 1.9rem;
       background-color: $red;
       border-color: $red;
-      width: 4rem;
+      width: 5rem;
       height: 0.3rem;
       border-radius: 1rem;
       display: block;
@@ -177,11 +185,11 @@
     // display: flex;
     // flex-direction: column;
    
-    width: 30%;
+    width: 24%;
     margin-left: 10%;
   }
   &__right{
-    width: 70%;
+    width: 76%;
     // margin-right: auto;
 
     // display: block;
@@ -200,9 +208,9 @@
     text-align: center;
   }
   &__head{
-    font-size: 1.4rem;
-    letter-spacing: 0.08em;
-    line-height: 150%;
+    font-size: 1.6rem;
+    // letter-spacing: 0.08em;
+    line-height: 194%;
     color: $orange-darken;
     text-align: left;
     @include max-screen($tablet-break-point) {
@@ -216,9 +224,9 @@
     }
   }
   &__content{
-    font-size: 1.4rem;
-    letter-spacing: 0.08em;
-    line-height: 150%;
+    font-size: 1.6rem;
+    // letter-spacing: 0.08em;
+    line-height: 194%;
     text-align: left;
     @include max-screen($tablet-break-point) {
       font-size: 1.8rem;
@@ -265,7 +273,7 @@ export default {
               type: 'text',
             },
             {
-              text: `<span class="headitem">こんな法人様へオススメ。</span> <hr/>`,
+              text: `<span class="headitem">こんな法人様へオススメ</span> <hr/>`,
               type: 'text',
             },
           ],

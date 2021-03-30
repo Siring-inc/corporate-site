@@ -28,6 +28,7 @@ export default {
   &__frame{
      max-width: 50%;
      margin: 0 auto;
+     margin-bottom: 6.9rem;
     // display: flex;
     // flex-direction: column;
     // justify-content: space-around;
@@ -41,44 +42,49 @@ export default {
   }
   &__icon {
     // display: block;
-    width: 23px;
-    height: 28px;
-    margin-right: 7px;
+    width: 40px;
+    height: 38px;
+    margin-right: 5px;
+    margin-left: 19px;
+    margin-top: -3px;
     background-image: url(~assets/img/icon/icon-checkbox.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
   &__label {
-    font-size: 1.4rem;
+    margin-top: 1.1rem;
+    font-size: 1.6rem;
     line-height: 120%;
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
     }
   }
   &__head{
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: $red;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 16px;
-    margin-top: 40px;
+    margin-top: 53px;
     text-align: center;
+    letter-spacing: 0.2rem;
     @include max-screen($tablet-break-point) {
       font-size: 3.2rem;
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
     }
-  }
-  /deep/ hr {
-    background-color: $red;
-    border-color: $red;
-    width: 4rem;
-    height: 0.3rem;
-    border-radius: 1rem;
-    display: block;
-    @include max-screen($mobile-break-point) {
+    /deep/ hr {
+      background-color: $red;
+      border-color: $red;
+      width: 5rem;
+      height: 0.3rem;
+      border-radius: 1rem;
       display: block;
+      margin-top: 1.9rem;
+      @include max-screen($mobile-break-point) {
+        display: block;
+      }
     }
   }
 }
