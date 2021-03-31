@@ -36,15 +36,22 @@ button {
   padding: 34px 0;
   box-sizing: border-box;
   background-image: url(~assets/img/bg.png);
-  background-size: cover;
+  // background-size: cover;
+  // background-size:contain;
   @include max-screen($break-point) {
     background-size: 100% 100%;
   }
   &--bg-red {
     background-image: url(~assets/img/bg-red.png);
+    background-size:200%;
+  }
+  &--bg-red-contact{
+    background-image: url(~assets/img/bg-red.png);
+    background-size:cover;
   }
   &--bg-blue {
     background-image: url(~assets/img/bg-blue.png);
+    background-size:cover;
   }
   @include max-screen($break-point) {
     padding: 60px 0 40px;

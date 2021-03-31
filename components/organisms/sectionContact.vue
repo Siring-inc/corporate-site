@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.section.section--bg-red
+  section.section.section--bg-red-contact
     .section__wrap
       h2.section__header
         .section__title
