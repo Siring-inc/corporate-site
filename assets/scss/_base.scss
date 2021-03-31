@@ -49,8 +49,7 @@ button {
     background-image: url(~assets/img/bg-red.png);
   }
   &--bg-blue {
-    background-image: url(~assets/img/bg-blue.png);
-    background-size:cover;
+    background-image: url(~assets/img/bg-blue.png) !important;
   }
   @include max-screen($break-point) {
     padding: 60px 0 40px;
