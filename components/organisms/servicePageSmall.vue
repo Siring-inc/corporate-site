@@ -93,13 +93,12 @@
     }
     /deep/ hr {
       background-color: $red;
-      border-color: $red;
+      border: none;
       width: 5rem;
-      height: 0.3rem;
-      border-radius: 1rem;
+      height: 0.5rem;
+      border-radius: 2rem;
       display: block;
-      margin-top: 18px;
-      // margin-top: 1.4rem;
+      margin-top: 1.8rem;
       margin-bottom: -4.5rem;
       @include max-screen($mobile-break-point) {
         display: block;
@@ -158,10 +157,10 @@
     /deep/ hr {
       margin-top: 1.9rem;
       background-color: $red;
-      border-color: $red;
+      border: none;
       width: 5rem;
-      height: 0.3rem;
-      border-radius: 1rem;
+      height: 0.5rem;
+      border-radius: 2rem;
       display: block;
       @include max-screen($mobile-break-point) {
         display: block;

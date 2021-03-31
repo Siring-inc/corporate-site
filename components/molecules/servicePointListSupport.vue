@@ -76,10 +76,10 @@ export default {
     }
     /deep/ hr {
       background-color: $red;
-      border-color: $red;
+      border: none;
       width: 5rem;
-      height: 0.3rem;
-      border-radius: 1rem;
+      height: 0.5rem;
+      border-radius: 2rem;
       display: block;
       margin-top: 1.9rem;
       @include max-screen($mobile-break-point) {
