@@ -26,7 +26,7 @@ export default {
   // max-width: 710px;
   // margin: 0 auto;
   &__frame{
-     max-width: 50%;
+     max-width: 53%;
      margin: 0 auto;
      margin-bottom: 6.9rem;
     // display: flex;
