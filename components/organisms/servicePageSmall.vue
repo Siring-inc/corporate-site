@@ -77,6 +77,12 @@
     line-height: 140%;
     margin-bottom: 6.5rem;
     text-align: center;
+    @include max-screen($tablet-break-point) {
+      font-size: 1.2rem;
+    }
+    @include max-screen($mobile-break-point) {
+      font-size: 0.8rem;
+    }
     /deep/ .headitem {
       font-size: 2.4rem;
       color: $red;
@@ -108,33 +114,37 @@
 
 }
 .service-list {
-  padding: 70px 0;
+  padding: 7rem 0;
   display: flex;
   flex-direction: column;
   &__item {
     background-color: #fff;
-    box-shadow: 15px 15px #FAE3E3;
+    box-shadow: 1.5rem 1.5rem #FAE3E3;
     // background: #fff;
-    border-radius: 20px;
+    border-radius: 2rem;
     width: 90%;
     // padding-top: 80px;
-    padding-top: 28px;
-    margin-bottom: 128px;
+    padding-top: 2.8rem;
+    margin-bottom: 12.8rem;
     margin-left: auto;
     margin-right: auto;
     @include max-screen($tablet-break-point) {
-      padding-top: 60px;
+      padding-top: 6rem;
     }
     &:first-child {
-      // padding-top: 0;ß
+      // padding-top: 0;
     }
     &:last-child {
       margin-bottom: 0;
     }
+    // @include max-screen($mobile-break-point) {
+    //   padding-top: 2rem;
+    //   padding-left: 2rem;
+    //   padding-right: 2rem;
+    // }
   }
 }
 .service-item {
-  
   &__header {
     font-size: 2.4rem;
     color: $red;
@@ -150,9 +160,9 @@
       font-size: 2.4rem;
     }
     // margin-bottom: 50px;
-    @include max-screen($tablet-break-point) {
-      margin-bottom: 30px;
-    }
+    // @include max-screen($tablet-break-point) {
+    //   margin-bottom: 30px;
+    // }
   }
     /deep/ hr {
       margin-top: 1.9rem;
@@ -186,6 +196,9 @@
    
     width: 24%;
     margin-left: 10%;
+    // @include max-screen($mobile-break-point) {
+    //   display: block;
+    // }
   }
   &__right{
     width: 76%;
@@ -213,13 +226,13 @@
     color: $orange-darken;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
   }
   &__content{
@@ -228,13 +241,13 @@
     line-height: 194%;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
   } 
 }
@@ -308,15 +321,15 @@ export default {
               priceList: [
                 {
                   term: '障害',
-                  desc: '22,000円 / 月',
+                  desc: '22,000円 / 月～',
                 },
                 {
                   term: '保育',
-                  desc: '33,000円 / 月',
+                  desc: '33,000円 / 月～',
                 },
                 {
                   term: '介護',
-                  desc: '110,000円 / 月',
+                  desc: '110,000円 / 月～',
                 },
               ],
             },
@@ -385,15 +398,15 @@ export default {
               priceList: [
                 {
                   term: '障害',
-                  desc: '55,000円 / 月',
+                  desc: '55,000円 / 月～',
                 },
                 {
                   term: '保育',
-                  desc: '44,000円 / 月',
+                  desc: '44,000円 / 月～',
                 },
                 {
                   term: '介護',
-                  desc: '165,000円 / 月',
+                  desc: '165,000円 / 月～',
                 },
               ],
             },
@@ -460,19 +473,19 @@ export default {
                 priceList: [
                   {
                     term: '障害',
-                    desc: '55,000円 / 月',
+                    desc: '55,000円 / 月～',
                   },
                   {
                     term: '保育',
-                    desc: '55,000円 / 月',
+                    desc: '55,000円 / 月～',
                   },
                   {
                     term: `介護 <span class="pricenote">（特養含む拠点）</span>`,
-                    desc: '88,000円 / 月',
+                    desc: '88,000円 / 月～',
                   },
                   {
                     term: `介護 <span class="pricenote">（上記以外）</span>`,
-                    desc: '55,000円 / 月',
+                    desc: '55,000円 / 月～',
                   }
                 ],
               },

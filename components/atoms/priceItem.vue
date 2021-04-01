@@ -33,7 +33,7 @@ export default {
     text-align: left;
     font-size: 2.2rem;
     line-height: 135%;
-    width: 260px;
+    width: 240px;
     margin-left: 27px;
     margin-top: 7px;
     @include max-screen($tablet-break-point) {
