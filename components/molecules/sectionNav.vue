@@ -53,7 +53,10 @@ div
     font-weight: 500;
     margin-bottom: 10px;
     @include max-screen($mobile-break-point) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      /deep/ .newline{
+        display: block;
+      }
     }
   }
   &__icon {
@@ -74,17 +77,17 @@ export default {
       clientRectY: 0,
       navItem: [
         {
-          title: `小規模法人<br />サポートプラン`,
+          title: `小規模法人<br />サポート<span class="newline">プラン</span>`,
           link: '/service',
           scrollTo: '#serviceSmall'
         },
         {
-          title: `中規模法人<br />サポートプラン`,
+          title: `中規模法人<br />サポート<span class="newline">プラン</span>`,
           link: '/service',
           scrollTo: '#serviceMedium'
         },
         {
-          title: `大規模法人<br />サポートプラン`,
+          title: `大規模法人<br />サポート<span class="newline">プラン</span>`,
           link: '/service',
           scrollTo: '#serviceLarge'
         },
