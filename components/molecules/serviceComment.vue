@@ -31,13 +31,13 @@ export default {
   background: $red;
   border-radius: 50%;
   box-sizing: border-box;
-  // @include max-screen($mobile-break-point) {
-  //   margin: -0.9em -2px 5.5em -169px;
-  //   width: 6rem;
-  //   height: 6rem;
-  //   line-height:1rem;
-  //   font-size: 1rem;
-  // }
+  @include max-screen($mobile-break-point) {
+    margin: -0.9em -2px 5.5em -169px;
+    width: 6rem;
+    height: 6rem;
+    line-height:1rem;
+    font-size: 1rem;
+  }
   @include max-screen($tablet-break-point) {
     margin: -0.1em -2px 5.5em -203px;
     width: 6rem;
@@ -57,14 +57,14 @@ export default {
   z-index: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  // @include max-screen($mobile-break-point) {
-  //   bottom: 4px;
-  //   right: -14px;
-  //   margin-top: -15px;
-  //   border: 10px solid transparent;
-  //   border-left: 25px solid $red;
-  //   transform: rotate(38deg);
-  // }
+  @include max-screen($mobile-break-point) {
+    bottom: 4px;
+    right: -14px;
+    margin-top: -15px;
+    border: 10px solid transparent;
+    border-left: 25px solid $red;
+    transform: rotate(38deg);
+  }
   @include max-screen($tablet-break-point) {
     bottom: 1px;
     right: -15px;

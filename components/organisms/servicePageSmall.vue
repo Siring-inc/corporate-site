@@ -199,6 +199,9 @@
     @include max-screen($mobile-break-point) {
       width: 26%;
     }
+   @include max-screen($small-mobile-break-point) {
+      margin-left: 1px;
+    }
   }
   &__right{
     width: 76%;
@@ -223,7 +226,12 @@
       max-width: 52rem;
     }
     @include max-screen($mobile-break-point) {
-      max-width: 38rem;
+      max-width: 37rem;
+      padding: 2px;
+    }
+    @include max-screen($small-mobile-break-point) {
+      max-width: 26rem;
+      padding: 0px;
     }
   }
   &__head{
@@ -238,7 +246,11 @@
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1rem;
+      font-size: 8px;
+    }
+    @include max-screen($small-mobile-break-point) {
+      // margin-left: 10%;
+      font-size: 8px;
     }
   }
   &__content{
@@ -253,7 +265,11 @@
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1rem;
+      font-size: 8px;
+    }
+    @include max-screen($small-mobile-break-point) {
+      // margin-left: 10%;
+      font-size: 8px;
     }
   } 
 }

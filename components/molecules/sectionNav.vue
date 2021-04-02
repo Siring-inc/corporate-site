@@ -29,6 +29,9 @@ div
     @include max-screen($tablet-break-point) {
       top: 33px;
     }
+    @include max-screen($mobile-break-point) {
+      top: 45px;
+    }
   }
 }
 .section-nav-list {

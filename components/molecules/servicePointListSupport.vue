@@ -31,6 +31,12 @@ export default {
     @include max-screen($tablet-break-point) {
       max-width: 75%;
     }
+    @include max-screen($mobile-break-point) {
+      max-width: 100%;
+    }
+    @include max-screen($small-mobile-break-point) {
+      max-width: 100%;
+    }
   }
   &__item {
     display: flex;
@@ -45,6 +51,14 @@ export default {
     background-image: url(~assets/img/icon/icon-checkbox.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @include max-screen($mobile-break-point) {
+      width: 20px;
+      height: 18px;
+    }
+    @include max-screen($small-mobile-break-point) {
+      width: 15px;
+      height: 13px;
+    }
   }
   &__label {
     margin-top: 1.1rem;
@@ -52,6 +66,14 @@ export default {
     line-height: 120%;
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
+    }
+    @include max-screen($mobile-break-point) {
+      font-size: 8px;
+      margin-top: 0.1rem;
+    }
+    @include max-screen($small-mobile-break-point) {
+      font-size: 8px;
+      margin-top: 0.1rem;
     }
   }
   &__head{
