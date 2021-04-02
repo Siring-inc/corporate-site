@@ -6,7 +6,7 @@ div
         nuxt-link.section-nav(v-scroll-to="item.scrollTo" :to="item.link")
           .section-nav__label(v-html="item.title")
           .section-nav__icon
-  .section-nav-list.section-nav-sticky(id="sectionNav" :class="{'section-nav-sticky--fixed': clientRectY < 0}")
+  .section-nav-list.section-nav-sticky(id="sectionNav" :class="{'section-nav-sticky--fixed': clientRectY < -80}")
     .section-nav-list__wrap
       .section-nav-list__item(v-for="(item, index) in navItem" :key="index")
         nuxt-link.section-nav(v-scroll-to="item.scrollTo" :to="item.link")
@@ -26,6 +26,9 @@ div
   transition: 0.3s;
   &--fixed {
     top: 43px;
+    @include max-screen($tablet-break-point) {
+      top: 33px;
+    }
   }
 }
 .section-nav-list {
