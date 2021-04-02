@@ -41,6 +41,9 @@ export default {
   margin: auto;
   margin-bottom: 40px;
   margin-top: 23px;
+  @include max-screen($tablet-break-point) {
+    max-width: 520px;
+  }
   &__item {
     display: flex;
     flex-direction: row;
@@ -48,7 +51,7 @@ export default {
     margin-bottom: 20px;
     border-bottom: 1px solid $red;
     @include max-screen($tablet-break-point) {
-      flex-direction: column;
+      flex-direction: row;
     }
     &:last-child {
       border-bottom: none;
@@ -61,8 +64,7 @@ export default {
     flex-direction: column;
     width: 500px;
     @include max-screen($tablet-break-point) {
-      width: 100%;
-      margin-bottom: 10px;
+      width: 38%;
     }
   }
   &__right {
@@ -70,6 +72,9 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include max-screen($tablet-break-point) {
+      max-width: 60%;
+    }
   }
   &__title {
     font-size: 2rem;
@@ -79,17 +84,16 @@ export default {
     font-weight: 500;
     margin-top: 5px;
     margin-left: 13px;
-  }
-  &__desc {
-    font-size: 1.2rem;
-    line-height: 140%;
+    @include max-screen($tablet-break-point) {
+    font-size: 1.4rem;
+    }
   }
 }
 .price-list {
   display: flex;
   flex-direction: column;
   @include max-screen($tablet-break-point) {
-    width: 100%;
+    width: 290px;
   }
   &__item {
     margin-bottom: 4px;

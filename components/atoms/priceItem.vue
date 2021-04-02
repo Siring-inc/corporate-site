@@ -23,22 +23,21 @@ export default {
 .price-item {
   display: inline-flex;
   flex-direction: row;
-  // text-align: right;
   width: 340px;
   @include max-screen($tablet-break-point) {
-    width: 100%;
+    width: 290px;
     text-align: left;
   }
   &__term {
     text-align: left;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 135%;
     width: 240px;
-    margin-left: 27px;
+    margin-left: 25px;
     margin-top: 7px;
     @include max-screen($tablet-break-point) {
-      font-size: 1.8rem;
-      width: 100%;
+      font-size: 1.4rem;
+      // width: 50%;
     }
     /deep/.pricenote{
       font-size: 1rem;
@@ -47,12 +46,13 @@ export default {
   &__desc {
     text-align: right;
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 135%;
     margin-right: 11px;
     margin-top: 7px;
     @include max-screen($tablet-break-point) {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
+      // width: 50%;
     }
   }
 }

@@ -24,7 +24,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 710px;
+  max-width: 71rem;
   margin: auto;
   &__item {
     width: 50%;

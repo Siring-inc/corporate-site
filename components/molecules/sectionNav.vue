@@ -58,6 +58,12 @@ div
         display: block;
       }
     }
+    @include max-screen($tablet-break-point) {
+      font-size: 1.2rem;
+      /deep/ .newline{
+        display: block;
+      }
+    }
   }
   &__icon {
     display: block;

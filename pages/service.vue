@@ -1,8 +1,8 @@
 <template lang="pug">
 div
   breadcrumbs(:breadcrumbs="breadcrumbs" :isShow="false")
-  sectionTopMessage
   sectionNav
+  sectionTopMessage
   .section.section--bg-red
     .section__wrap
       sectionServiceSmall

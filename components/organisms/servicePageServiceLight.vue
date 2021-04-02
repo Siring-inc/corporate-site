@@ -30,13 +30,13 @@
       line-height: 160%;
       font-weight: 600;
       margin: 0 2px;
-      @include max-screen($mobile-break-point) {
-        font-size: 1.8rem;
+      @include max-screen($tablet-break-point) {
+        font-size: 1.6rem;
       }
     }
     /deep/ br {
       display: block;
-      @include max-screen($mobile-break-point) {
+      @include max-screen($tablet-break-point) {
         display: block;
       }
     }

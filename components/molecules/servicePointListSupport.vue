@@ -23,25 +23,20 @@ export default {
 
 <style lang="scss" scoped>
 .service-point {
-  // max-width: 710px;
-  // margin: 0 auto;
   &__frame{
      max-width: 53%;
      margin: 0 auto;
      margin-bottom: 6.9rem;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
     align-items: center;
+    @include max-screen($tablet-break-point) {
+      max-width: 75%;
+    }
   }
   &__item {
-    // width: 100%;
     display: flex;
-    // align-items: center;
     margin-bottom: 10px;
   }
   &__icon {
-    // display: block;
     width: 40px;
     height: 38px;
     margin-right: 5px;

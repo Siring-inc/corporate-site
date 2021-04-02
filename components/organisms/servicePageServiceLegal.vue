@@ -14,14 +14,12 @@
 .service-content {
   &__text {
     font-size: 1.7rem;
-    // letter-spacing: 0.04em;
     line-height: 3.5rem;
     margin-bottom: 58px;
     text-align: center;
     /deep/ .marker {
       background:linear-gradient(transparent 50%, lighten($blue, 30%) 50%);
       font-size: 1.8rem;
-      // line-height: 160%;
       font-weight: 400;
       margin: 0 4px;
       @include max-screen($mobile-break-point) {
@@ -59,6 +57,9 @@
   margin-bottom: 141px;
   color: $blue;
   font-weight: 500;
+  @include max-screen($tablet-break-point) {
+     font-size: 1.9rem;
+  }
   }
 </style>
 

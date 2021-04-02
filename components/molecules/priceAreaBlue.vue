@@ -47,7 +47,7 @@ export default {
     margin-bottom: 20px;
     border-bottom: 1px solid $blue;
     @include max-screen($tablet-break-point) {
-      flex-direction: column;
+      flex-direction: row;
     }
     &:last-child {
       border-bottom: none;
@@ -60,8 +60,8 @@ export default {
     flex-direction: column;
     width: 400px;
     @include max-screen($tablet-break-point) {
-      width: 100%;
-      margin-bottom: 10px;
+      width: 40%;
+      margin-bottom: 8px;
     }
   }
   &__right {
@@ -69,6 +69,11 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include max-screen($tablet-break-point) {
+      width: 60%;
+      margin-bottom: 8px;
+      margin-left: 50px;
+    }
   }
   &__title {
     font-size: 2rem;

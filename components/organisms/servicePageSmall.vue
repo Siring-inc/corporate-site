@@ -191,26 +191,27 @@
 }
 .service-item-recommend{
   &__left{
-    // display: flex;
-    // flex-direction: column;
-   
     width: 24%;
     margin-left: 10%;
-    // @include max-screen($mobile-break-point) {
-    //   display: block;
-    // }
+    @include max-screen($tablet-break-point) {
+      width: 28%;
+    }
+    @include max-screen($mobile-break-point) {
+      width: 26%;
+    }
   }
   &__right{
     width: 76%;
-    // margin-right: auto;
-
-    // display: block;
-    // justify-content: flex-end;
+    justify-content: flex-end;
+    @include max-screen($tablet-break-point) {
+      width: 72%;
+    }
+    @include max-screen($mobile-break-point) {
+      width: 74%;
+    }
   } 
   &__frame{
     display: flex;
-    // flex-direction: column;
-    // background: #fff;
     border-radius: 10px;
     border: 2px solid $red;
     padding: 16px;
@@ -218,21 +219,26 @@
     max-width: 665px;
     margin: auto;
     text-align: center;
+    @include max-screen($tablet-break-point) {
+      max-width: 52rem;
+    }
+    @include max-screen($mobile-break-point) {
+      max-width: 38rem;
+    }
   }
   &__head{
     font-size: 1.6rem;
-    // letter-spacing: 0.08em;
     line-height: 194%;
     color: $orange-darken;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   &__content{
@@ -241,13 +247,13 @@
     line-height: 194%;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   } 
 }
