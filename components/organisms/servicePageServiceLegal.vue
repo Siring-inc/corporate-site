@@ -17,13 +17,16 @@
     line-height: 3.5rem;
     margin-bottom: 58px;
     text-align: center;
+    @include max-screen($mobile-break-point) {
+      font-size: 1.2rem;
+    }
     /deep/ .marker {
       background:linear-gradient(transparent 50%, lighten($blue, 30%) 50%);
       font-size: 1.8rem;
       font-weight: 400;
       margin: 0 4px;
       @include max-screen($mobile-break-point) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
     }
     /deep/ br {
@@ -35,6 +38,9 @@
     /deep/ .markernohighlight{
       font-size: 1.8rem;
       font-weight: 400;
+      @include max-screen($mobile-break-point) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -59,6 +65,10 @@
   font-weight: 500;
   @include max-screen($tablet-break-point) {
      font-size: 1.9rem;
+  }
+  @include max-screen($mobile-break-point) {
+     font-size: 1.6rem;
+     padding: 10px;
   }
   }
 </style>

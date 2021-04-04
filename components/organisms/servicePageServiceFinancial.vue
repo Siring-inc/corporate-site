@@ -106,7 +106,7 @@ export default {
               priceList: [
                 {
                   term: '110,000円 / 月',
-                  desc: '+ 実費交通費　'
+                  desc: '+ 実費交通費'
                 }
               ]
             }

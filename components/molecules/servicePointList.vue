@@ -41,12 +41,19 @@ export default {
     background-image: url(~assets/img/icon/icon-flower-blue.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @include max-screen($mobile-break-point) {
+      margin-left: 0px;
+    }
   }
   &__label {
     font-size: 1.8rem;
     line-height: 173%;
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
+      flex: 1;
+    }
+    @include max-screen($mobile-break-point) {
+      flex: 1;
     }
   }
 }

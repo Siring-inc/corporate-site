@@ -30,7 +30,7 @@ div
       top: 33px;
     }
     @include max-screen($mobile-break-point) {
-      top: 45px;
+      top: 44px;
     }
   }
 }
@@ -40,13 +40,16 @@ div
   padding: 10px 0;
   &__wrap {
     @include limitter;
-    border-left: 1px dotted #fff;
+    //border-left: 1px dotted #fff;
     display: flex;
     flex-direction: row;
   }
   &__item {
     width: 100%;
     border-right: 1px dotted #fff;
+    &:first-child{
+    border-left: 1px dotted #fff;
+    }
   }
 }
 .section-nav {

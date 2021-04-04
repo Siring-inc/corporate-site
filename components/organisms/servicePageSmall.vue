@@ -83,6 +83,7 @@
     @include max-screen($mobile-break-point) {
       font-size: 0.8rem;
     }
+    
     /deep/ .headitem {
       font-size: 2.4rem;
       color: $red;
@@ -95,6 +96,9 @@
       }
       @include max-screen($mobile-break-point) {
         font-size: 2.4rem;
+      }
+      @include max-screen($small-mobile-break-point) {
+        font-size: 2.1rem;
       }
     }
     /deep/ hr {
@@ -129,7 +133,9 @@
     margin-left: auto;
     margin-right: auto;
     @include max-screen($tablet-break-point) {
-      padding-top: 6rem;
+      padding: 6rem 10px 0;
+      width: 100%;
+      box-sizing: border-box;
     }
     &:first-child {
       // padding-top: 0;
@@ -158,6 +164,9 @@
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
+    }
+    @include max-screen($small-mobile-break-point) {
+      font-size: 2.1rem;
     }
     // margin-bottom: 50px;
     // @include max-screen($tablet-break-point) {
@@ -231,7 +240,7 @@
     }
     @include max-screen($small-mobile-break-point) {
       max-width: 26rem;
-      padding: 0px;
+      padding: 4px;
     }
   }
   &__head{
@@ -388,7 +397,7 @@ export default {
               type: 'text',
             },
             {
-              text: `<span class="headitem">こんな法人様へオススメ。</span> <hr/>`,
+              text: `<span class="headitem">こんな法人様へオススメ</span> <hr/>`,
               type: 'text',
             },
           ],
@@ -465,7 +474,7 @@ export default {
               type: 'text',
             },
             {
-              text: `<span class="headitem">こんな法人様へオススメ。</span> <hr/>`,
+              text: `<span class="headitem">こんな法人様へオススメ</span> <hr/>`,
               type: 'text',
             },
           ],

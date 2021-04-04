@@ -33,6 +33,9 @@
       @include max-screen($tablet-break-point) {
         font-size: 1.6rem;
       }
+      @include max-screen($mobile-break-point) {
+        display: block;
+      }
     }
     /deep/ br {
       display: block;

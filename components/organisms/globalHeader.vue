@@ -137,6 +137,14 @@ export default {
   align-items: center;
   &__left {
     margin-right: 20px;
+    @include max-screen($mobile-break-point) {
+      margin-right: 0px;
+    }
+  }
+  &__right {
+    @include max-screen($mobile-break-point) {
+    width: 50%;
+  }
   }
   &__address {
     font-size: 1.4rem;
@@ -144,6 +152,10 @@ export default {
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
     }
+  }
+  @include max-screen($mobile-break-point) {
+    padding: 0 15px;
+    justify-content: space-between;
   }
 }
 .company-tell {

@@ -41,7 +41,7 @@
   background-size: 100% 100%;
   @include max-screen($tablet-break-point) {
     padding: 80px 20px;
-    margin: 0 -20px;
+    margin: 0 0px;
   }
   @include max-screen($mobile-break-point) {
     padding: 80px 20px 80px;

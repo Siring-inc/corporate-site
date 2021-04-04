@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .service-point {
   &__frame{
-     max-width: 53%;
+     max-width: 55%;
      margin: 0 auto;
      margin-bottom: 6.9rem;
     align-items: center;
@@ -32,7 +32,7 @@ export default {
       max-width: 75%;
     }
     @include max-screen($mobile-break-point) {
-      max-width: 100%;
+      max-width: 80%;
     }
     @include max-screen($small-mobile-break-point) {
       max-width: 100%;
@@ -90,6 +90,9 @@ export default {
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
+    }
+    @include max-screen($small-mobile-break-point) {
+      font-size: 2.1rem;
     }
     /deep/ hr {
       background-color: $red;
