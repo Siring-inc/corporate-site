@@ -61,12 +61,6 @@ div
     letter-spacing: 0.08em;
     font-weight: 500;
     margin-bottom: 10px;
-    @include max-screen($mobile-break-point) {
-      font-size: 1.2rem;
-      /deep/ .newline{
-        display: block;
-      }
-    }
     @include max-screen($tablet-break-point) {
       font-size: 1.2rem;
       /deep/ .newline{

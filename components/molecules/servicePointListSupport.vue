@@ -71,10 +71,6 @@ export default {
       font-size: 8px;
       margin-top: 0.1rem;
     }
-    @include max-screen($small-mobile-break-point) {
-      font-size: 8px;
-      margin-top: 0.1rem;
-    }
   }
   &__head{
     font-size: 2.4rem;

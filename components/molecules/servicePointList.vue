@@ -52,9 +52,6 @@ export default {
       font-size: 1.2rem;
       flex: 1;
     }
-    @include max-screen($mobile-break-point) {
-      flex: 1;
-    }
   }
 }
 </style>
