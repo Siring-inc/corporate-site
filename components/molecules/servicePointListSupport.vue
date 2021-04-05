@@ -24,18 +24,18 @@ export default {
 <style lang="scss" scoped>
 .service-point {
   &__frame{
-     max-width: 55%;
-     margin: 0 auto;
-     margin-bottom: 6.9rem;
+    //  max-width: 55%;
+    //  margin: 0 auto;
+    margin-left: 87px;
+    margin-bottom: 6.9rem;
     align-items: center;
     @include max-screen($tablet-break-point) {
-      max-width: 75%;
+      // max-width: 75%;
+      margin-left: 10px;
     }
     @include max-screen($mobile-break-point) {
-      max-width: 80%;
-    }
-    @include max-screen($small-mobile-break-point) {
-      max-width: 100%;
+      // max-width: 80%;
+      margin-left: 0px;
     }
   }
   &__item {
@@ -54,10 +54,12 @@ export default {
     @include max-screen($mobile-break-point) {
       width: 20px;
       height: 18px;
+      margin-left: 16px;
     }
     @include max-screen($small-mobile-break-point) {
       width: 15px;
       height: 13px;
+      margin-left: 0px;
     }
   }
   &__label {
@@ -70,6 +72,9 @@ export default {
     @include max-screen($mobile-break-point) {
       font-size: 8px;
       margin-top: 0.1rem;
+    }
+    @include max-screen($small-mobile-break-point) {
+      font-size: 7px;
     }
   }
   &__head{

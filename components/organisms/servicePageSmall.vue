@@ -43,7 +43,7 @@
 <style lang="scss" scoped>
 .service-chart{
   &__image {
-    width: 80%;
+    width: 95%;
     margin-bottom: 6.8rem;
     margin-top: 23px;
     display: block;
@@ -52,16 +52,19 @@
     @include max-screen($tablet-break-point) {
       margin-bottom: 40px;
     }
+    @include max-screen($mobile-break-point) {
+      width: 100%;
+    }
     img {
       width: 100%;
       height: auto;
     }
-    &--pc {
-      display: block;
-      @include max-screen($mobile-break-point) {
-        display: none;
-      }
-    }
+    // &--pc {
+    //   display: block;
+    //   @include max-screen($mobile-break-point) {
+    //     display: none;
+    //   }
+    // }
     // &--sp {
     //   display: none;
     //   @include max-screen($mobile-break-point) {
@@ -124,10 +127,8 @@
   &__item {
     background-color: #fff;
     box-shadow: 1.5rem 1.5rem #FAE3E3;
-    // background: #fff;
     border-radius: 2rem;
     width: 90%;
-    // padding-top: 80px;
     padding-top: 2.8rem;
     margin-bottom: 12.8rem;
     margin-left: auto;
@@ -136,10 +137,11 @@
       padding: 6rem 10px 0;
       width: 100%;
       box-sizing: border-box;
+      box-shadow: 0.8rem 0.8rem #fae3e3;
     }
-    &:first-child {
-      // padding-top: 0;
-    }
+    // &:first-child {
+    //    padding-top: 0;
+    // }
     &:last-child {
       margin-bottom: 0;
     }
