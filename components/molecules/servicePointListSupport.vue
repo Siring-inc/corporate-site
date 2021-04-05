@@ -54,12 +54,11 @@ export default {
     @include max-screen($mobile-break-point) {
       width: 20px;
       height: 18px;
-      margin-left: 16px;
+      margin-left: 0px;
     }
     @include max-screen($small-mobile-break-point) {
       width: 15px;
       height: 13px;
-      margin-left: 0px;
     }
   }
   &__label {
@@ -67,11 +66,14 @@ export default {
     font-size: 1.6rem;
     line-height: 120%;
     @include max-screen($tablet-break-point) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     @include max-screen($mobile-break-point) {
-      font-size: 8px;
+      font-size: 1.1rem;
       margin-top: 0.1rem;
+    }
+    @include max-screen($sub-mobile-break-point) {
+      font-size: 8px;
     }
     @include max-screen($small-mobile-break-point) {
       font-size: 7px;

@@ -59,18 +59,6 @@
       width: 100%;
       height: auto;
     }
-    // &--pc {
-    //   display: block;
-    //   @include max-screen($mobile-break-point) {
-    //     display: none;
-    //   }
-    // }
-    // &--sp {
-    //   display: none;
-    //   @include max-screen($mobile-break-point) {
-    //     display: block;
-    //   }
-    // }
   }
 }
 .service-content {
@@ -81,10 +69,10 @@
     margin-bottom: 6.5rem;
     text-align: center;
     @include max-screen($tablet-break-point) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     @include max-screen($mobile-break-point) {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
     
     /deep/ .headitem {
@@ -139,17 +127,9 @@
       box-sizing: border-box;
       box-shadow: 0.8rem 0.8rem #fae3e3;
     }
-    // &:first-child {
-    //    padding-top: 0;
-    // }
     &:last-child {
       margin-bottom: 0;
     }
-    // @include max-screen($mobile-break-point) {
-    //   padding-top: 2rem;
-    //   padding-left: 2rem;
-    //   padding-right: 2rem;
-    // }
   }
 }
 .service-item {
@@ -170,10 +150,6 @@
     @include max-screen($small-mobile-break-point) {
       font-size: 2.1rem;
     }
-    // margin-bottom: 50px;
-    // @include max-screen($tablet-break-point) {
-    //   margin-bottom: 30px;
-    // }
   }
     /deep/ hr {
       margin-top: 1.9rem;
@@ -206,12 +182,10 @@
     margin-left: 10%;
     @include max-screen($tablet-break-point) {
       width: 28%;
+      margin-left: 0;
     }
     @include max-screen($mobile-break-point) {
       width: 26%;
-    }
-   @include max-screen($small-mobile-break-point) {
-      margin-left: 1px;
     }
   }
   &__right{
@@ -251,35 +225,32 @@
     color: $orange-darken;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 8px;
+      font-size: 9px;
     }
     @include max-screen($small-mobile-break-point) {
-      // margin-left: 10%;
       font-size: 8px;
     }
   }
   &__content{
     font-size: 1.6rem;
-    // letter-spacing: 0.08em;
     line-height: 194%;
     text-align: left;
     @include max-screen($tablet-break-point) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       /deep/ br {
         display: none;
       }
     }
     @include max-screen($mobile-break-point) {
-      font-size: 8px;
+      font-size: 9px;
     }
     @include max-screen($small-mobile-break-point) {
-      // margin-left: 10%;
       font-size: 8px;
     }
   } 
