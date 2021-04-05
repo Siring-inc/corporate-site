@@ -19,6 +19,9 @@
     text-align: center;
     @include max-screen($mobile-break-point) {
       font-size: 1.2rem;
+      /deep/ .newline {
+        display: block;
+      }
     }
     /deep/ .marker {
       background:linear-gradient(transparent 50%, lighten($blue, 30%) 50%);
@@ -27,6 +30,9 @@
       margin: 0 4px;
       @include max-screen($mobile-break-point) {
         font-size: 1.4rem;
+      }
+      /deep/ br {
+      display: none;
       }
     }
     /deep/ br {
@@ -92,9 +98,9 @@ export default {
             {
               text:
                 `<span class="markernohighlight">法定監査</span>に立ち会わせていただきます。<br/> 
-                行政担当者及び立会の公認会計士の<span class="marker">「疑問に見解</span>を述べさせていただきます。 <br/> 
-                不合理な指摘があった場合には<span class="marker">その場で交渉</span>させていただきます。<br/>  
-                また、文書指摘があった場合には<span class="marker">改善（回答）方法</span>をアドバイスさせていただきます。`
+                行政担当者及び立会の公認会計士の<span class="newline"><span class="marker">「疑問に見解</span>を述べさせていただきます。 <br/> 
+                不合理な指摘があった場合には<span class="newline"><span class="marker">その場で交渉</span>させていただきます。<br/>  
+                また、文書指摘があった場合には<span class="newline"><span class="marker">改善（回答）方法</span>をアドバイスさせていただきます。</span></span></span>`
             }
           ],
           frame: {

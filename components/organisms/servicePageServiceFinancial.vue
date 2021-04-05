@@ -48,6 +48,9 @@
   /deep/ .marker {
     color: $orange-darken;
     }
+  @include max-screen($mobile-break-point) {
+    line-height: 24px;
+  }
 }
 .service-item {
   &__header {

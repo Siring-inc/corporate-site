@@ -43,7 +43,7 @@ export default {
   margin-top: 23px;
   @include max-screen($tablet-break-point) {
     max-width: 520px;
-    padding: 5px;
+    padding: 10px;
   }
   &__item {
     display: flex;
