@@ -1,6 +1,13 @@
 # siring-corporate-site
 
-> My superb Nuxt.js project
+> 株式会社シリング　コーポレートサイト
+
+## version
+node
+v11.12.0
+
+npm
+6.14.4
 
 ## Build Setup
 

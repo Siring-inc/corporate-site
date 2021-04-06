@@ -1,19 +1,20 @@
 <template lang="pug">
 .price
-  //- .price_head(v-html="priceData.head")
   .price__item(v-for="(item, index) in priceData" :key="index")
     .price__left
       .price__title
         | {{item.title}}
-      //- .price__desc(v-if="item.desc" v-html="item.desc")
+      .price__desc(v-if="item.desc" v-html="item.desc")
     .price__right
       .price-list
         .price-list__item(v-for="(item, indexPrice)  in item.priceList" :key="indexPrice")
           priceItem(:priceItem="item")
+  .price__under(v-for="(item, index) in priceData" :key="index")
+    .price__descmobile(v-html="item.descmobile")    
 </template>
 
 <script>
-import priceItem from '~/components/atoms/priceItem.vue'
+import priceItem from '~/components/atoms/priceItemBlue.vue'
 
 export default {
   components: {
@@ -34,26 +35,18 @@ export default {
 .price {
   background: #fff;
   border-radius: 20px;
-  border: 2px dotted $red;
-  padding: 16px;
+  border: 2px dotted $blue;
+  padding: 20px;
   box-sizing: border-box;
-  max-width: 665px;
+  max-width: 709px;
   margin: auto;
-  margin-bottom: 40px;
-  margin-top: 23px;
-  @include max-screen($tablet-break-point) {
-    max-width: 520px;
+  margin-bottom: 48px;
+  @include max-screen($mobile-break-point) {
     padding: 10px;
   }
   &__item {
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid $red;
-    @include max-screen($tablet-break-point) {
-      flex-direction: row;
-    }
     &:last-child {
       border-bottom: none;
       padding-bottom: 0px;
@@ -63,9 +56,13 @@ export default {
   &__left {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     @include max-screen($tablet-break-point) {
-      width: 26%;
+      width: 35%;
+      margin-bottom: 8px;
+    }
+    @include max-screen($mobile-break-point) {
+      margin-bottom: 0;
     }
   }
   &__right {
@@ -74,36 +71,51 @@ export default {
     justify-content: flex-end;
     align-items: center;
     @include max-screen($tablet-break-point) {
-      max-width: 74%;
+      width: 65%;
+      margin-bottom: 8px;
+      margin-left: 50px;
+    }
+    @include max-screen($mobile-break-point) {
+      margin-left: 10px;
+      margin-bottom: 0;
     }
   }
   &__title {
     font-size: 2rem;
     line-height: 160%;
+    margin-left: 12px;
     margin-bottom: 4px;
-    color: $red;
+    color: $blue;
     font-weight: 500;
-    margin-top: 5px;
-    margin-left: 13px;
-    @include max-screen($tablet-break-point) {
-    font-size: 1.4rem;
-    }
     @include max-screen($mobile-break-point) {
-    font-size: 1.2rem;
-    margin-left: 0px;
-    }
-    @include max-screen($small-mobile-break-point) {
-    font-size: 1rem;
+      font-size: 1.8rem;
+      margin-left: 0px;
     }
   }
+  &__desc {
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-left: 12px;
+    @include max-screen($mobile-break-point) {
+      font-size: 1rem;
+      margin-left: 0px;
+      display: none;
+    }
+  }
+  &__descmobile {
+    display: none;
+  @include max-screen($mobile-break-point) {
+    display: block;
+    font-size: 1rem;
+    margin-left: 37%;
+    padding-bottom: 2%;
+  }
+}
 }
 .price-list {
   display: flex;
   flex-direction: column;
   @include max-screen($tablet-break-point) {
-    width: 290px;
-  }
-  @include max-screen($mobile-break-point) {
     width: 100%;
   }
   &__item {

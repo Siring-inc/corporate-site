@@ -6,7 +6,7 @@ div
         nuxt-link.section-nav(v-scroll-to="item.scrollTo" :to="item.link")
           .section-nav__label(v-html="item.title")
           .section-nav__icon
-  .section-nav-list.section-nav-sticky(id="sectionNav" :class="{'section-nav-sticky--fixed': clientRectY < 0}")
+  .section-nav-list.section-nav-sticky(id="sectionNav" :class="{'section-nav-sticky--fixed': clientRectY < -80}")
     .section-nav-list__wrap
       .section-nav-list__item(v-for="(item, index) in navItem" :key="index")
         nuxt-link.section-nav(v-scroll-to="item.scrollTo" :to="item.link")
@@ -26,20 +26,30 @@ div
   transition: 0.3s;
   &--fixed {
     top: 43px;
+    @include max-screen($tablet-break-point) {
+      top: 33px;
+    }
+    @include max-screen($mobile-break-point) {
+      top: 44px;
+    }
   }
 }
 .section-nav-list {
+  z-index: 1;
   background: $red-lighten;
   padding: 10px 0;
   &__wrap {
     @include limitter;
-    border-left: 1px dotted #fff;
+    //border-left: 1px dotted #fff;
     display: flex;
     flex-direction: row;
   }
   &__item {
     width: 100%;
     border-right: 1px dotted #fff;
+    &:first-child{
+    border-left: 1px dotted #fff;
+    }
   }
 }
 .section-nav {
@@ -51,8 +61,11 @@ div
     letter-spacing: 0.08em;
     font-weight: 500;
     margin-bottom: 10px;
-    @include max-screen($mobile-break-point) {
-      font-size: 1.4rem;
+    @include max-screen($tablet-break-point) {
+      font-size: 1.2rem;
+      /deep/ .newline{
+        display: block;
+      }
     }
   }
   &__icon {
@@ -73,19 +86,24 @@ export default {
       clientRectY: 0,
       navItem: [
         {
-          title: `会計チェック<br />「Light」`,
+          title: `小規模法人<br />サポート<span class="newline">プラン</span>`,
+          link: '/service',
+          scrollTo: '#serviceSmall'
+        },
+        {
+          title: `中規模法人<br />サポート<span class="newline">プラン</span>`,
+          link: '/service',
+          scrollTo: '#serviceMedium'
+        },
+        {
+          title: `大規模法人<br />サポート<span class="newline">プラン</span>`,
+          link: '/service',
+          scrollTo: '#serviceLarge'
+        },
+        {
+          title: `オプション<br />サービス`,
           link: '/service',
           scrollTo: '#serviceLight'
-        },
-        {
-          title: `経営担当者<br />サポート`,
-          link: '/service',
-          scrollTo: '#accountingSupport'
-        },
-        {
-          title: `正しい決算書<br />サポート`,
-          link: '/service',
-          scrollTo: '#correctSupport'
         }
       ]
     }

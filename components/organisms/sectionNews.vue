@@ -4,6 +4,9 @@
       .section__header
         h2.section__title
           sectionTitle(:titleData="titleData")
+      .section__header
+        .button-area.button-area--right
+          linkButton(:linkData="linkData")
       .section__content
         .news-section
           .news-section__content
@@ -14,9 +17,6 @@
                     |  {{ item.pubDate | moment }}
                   .news-item__title
                     | {{item.title}}
-      .section__footer
-        .button-area.button-area--right
-          linkButton(:linkData="linkData")
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       linkData: {
-        title: '一覧を見る',
+        title: 'ブログ一覧をみる',
         link: 'https://siring.theblog.me/',
         targetBlank: true
       },

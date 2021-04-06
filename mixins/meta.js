@@ -24,11 +24,17 @@ export default {
         content: this.meta.description
       })
       head.meta.push({
+        hid: 'keyword',
+        property: 'keyword',
+        content: this.meta.keyword
+      })
+      head.meta.push({
         hid: 'og:description',
         property: 'og:description',
         content: this.meta.description
       })
     }
+
 
     // ページタイプ
     if (typeof this.meta.type !== 'undefined') {

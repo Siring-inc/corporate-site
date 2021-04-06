@@ -32,7 +32,8 @@ button {
     }
 }
 .section {
-  padding: 80px 0;
+  // padding: 80px 0;
+  padding: 34px 0;
   box-sizing: border-box;
   background-image: url(~assets/img/bg.png);
   background-size: cover;
@@ -40,7 +41,15 @@ button {
     background-size: 100% 100%;
   }
   &--bg-red {
+    // background-image: url(~assets/img/bg-red.png);
+    background-image: none;
+    background-color: #FAF1F1 ;
+  }
+  &--bg-red-contact{
     background-image: url(~assets/img/bg-red.png);
+  }
+  &--bg-blue {
+    background-image: url(~assets/img/bg-blue.png) !important;
   }
   @include max-screen($break-point) {
     padding: 60px 0 40px;

@@ -41,7 +41,7 @@
   background-size: 100% 100%;
   @include max-screen($tablet-break-point) {
     padding: 80px 20px;
-    margin: 0 -20px;
+    margin: 0 0px;
   }
   @include max-screen($mobile-break-point) {
     padding: 80px 20px 80px;
@@ -187,8 +187,8 @@ export default {
         },
         {
           number: 'メリット4',
-          title: 'コスト削減',
-          content: `委託可能な対象業務を外部に委託することで、その担当要員を人材が必要な他の業務にシフトすることが可能となり、<span class="text-orange">人的資源の選択と集中</span>を実現できます。`
+          title: '総額コストの削減',
+          content: `既存職員の確保や新規人材の確保のためのコストを削減し、早期の事業安定化を実現することが可能です。既存要員の確保・新規要員採用が困難な状況であっても、<span class="text-orange">事業継続に必要な要員・スキルの維持</span>が確保できます。`
         }
       ]
     }

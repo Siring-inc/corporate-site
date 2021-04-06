@@ -1,11 +1,16 @@
 <template lang="pug">
 div
   breadcrumbs(:breadcrumbs="breadcrumbs" :isShow="false")
-  sectionTopMessage
   sectionNav
+  sectionTopMessage
   .section.section--bg-red
     .section__wrap
-      sectionService
+      sectionServiceSmall
+  .section.section--bg-blue
+    .section__wrap
+      sectionServiceLight
+      sectionServiceLegal
+      sectionServiceFinancial
   sectionAbout
   sectionContact
   .float-contact
@@ -177,7 +182,10 @@ import breadcrumbs from '~/components/molecules/breadcrumbs'
 import sectionContact from '~/components/organisms/sectionContact'
 import sectionTopMessage from '~/components/organisms/servicePageTopMessage'
 import sectionNav from '~/components/molecules/sectionNav'
-import sectionService from '~/components/organisms/servicePageServiceList'
+import sectionServiceSmall from '~/components/organisms/servicePageSmall'
+import sectionServiceLight from '~/components/organisms/servicePageServiceLight'
+import sectionServiceLegal from '~/components/organisms/servicePageServiceLegal'
+import sectionServiceFinancial from '~/components/organisms/servicePageServiceFinancial'
 import sectionAbout from '~/components/organisms/servicePageAbout'
 
 export default {
@@ -186,15 +194,19 @@ export default {
     sectionContact,
     sectionTopMessage,
     sectionNav,
-    sectionService,
+    sectionServiceSmall,
+    sectionServiceLight,
+    sectionServiceLegal,
+    sectionServiceFinancial,
     sectionAbout
   },
   mixins: [Meta],
   data() {
     return {
       meta: {
-        title: '記帳代行サービス',
+        title: '会計業務サポート',
         description: `現金や預金などの管理や経営の意思決定は法人で行い、面倒な伝票作成はシリングにお任せください。`,
+        keyword: `社会福祉法人会計,記帳代行,経理事務代行,経理のアウトソーシング,外部委託,業務委託,会計監査`,
         type: 'article',
         url: `${process.env.BASE_URL}/service/`
       }
@@ -209,7 +221,7 @@ export default {
             url: `/`
           },
           {
-            name: '記帳代行サービス',
+            name: '会計業務サポート',
             url: '/service'
           }
         ]
