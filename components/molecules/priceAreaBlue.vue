@@ -1,6 +1,5 @@
 <template lang="pug">
 .price
-  //- .price_head(v-html="priceData.head")
   .price__item(v-for="(item, index) in priceData" :key="index")
     .price__left
       .price__title
@@ -10,6 +9,8 @@
       .price-list
         .price-list__item(v-for="(item, indexPrice)  in item.priceList" :key="indexPrice")
           priceItem(:priceItem="item")
+  .price__under(v-for="(item, index) in priceData" :key="index")
+    .price__descmobile(v-html="item.descmobile")    
 </template>
 
 <script>
@@ -46,12 +47,6 @@ export default {
   &__item {
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid $blue;
-    @include max-screen($tablet-break-point) {
-      flex-direction: row;
-    }
     &:last-child {
       border-bottom: none;
       padding-bottom: 0px;
@@ -66,6 +61,9 @@ export default {
       width: 35%;
       margin-bottom: 8px;
     }
+    @include max-screen($mobile-break-point) {
+      margin-bottom: 0;
+    }
   }
   &__right {
     width: 100%;
@@ -79,6 +77,7 @@ export default {
     }
     @include max-screen($mobile-break-point) {
       margin-left: 10px;
+      margin-bottom: 0;
     }
   }
   &__title {
@@ -100,8 +99,18 @@ export default {
     @include max-screen($mobile-break-point) {
       font-size: 1rem;
       margin-left: 0px;
+      display: none;
     }
   }
+  &__descmobile {
+    display: none;
+  @include max-screen($mobile-break-point) {
+    display: block;
+    font-size: 1rem;
+    margin-left: 37%;
+    padding-bottom: 2%;
+  }
+}
 }
 .price-list {
   display: flex;

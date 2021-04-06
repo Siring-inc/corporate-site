@@ -106,6 +106,7 @@ export default {
             {
               title: '報酬',
               desc: `※訪問日数により変動致します。`,
+              descmobile: `※訪問日数により変動致します。`,
               priceList: [
                 {
                   term: '110,000円 / 月',

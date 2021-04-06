@@ -155,7 +155,8 @@ export default {
           price: [
             {
               title: '報酬',
-              desc: `※拠点数により料金は変動します。`,
+              desc: `※拠点数により報酬は変動します。`,
+              descmobile: `※拠点数により報酬は変動します。`,
               priceList: [
                 {
                   term: '11,000円 / 月',

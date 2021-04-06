@@ -182,10 +182,14 @@
     margin-left: 10%;
     @include max-screen($tablet-break-point) {
       width: 28%;
-      margin-left: 0;
+      margin-left: 7%;
     }
     @include max-screen($mobile-break-point) {
       width: 26%;
+      margin-left: 5%;
+    }
+    @include max-screen($small-mobile-break-point) {
+      margin-left: 1px;
     }
   }
   &__right{

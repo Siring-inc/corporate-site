@@ -73,8 +73,11 @@
      font-size: 1.9rem;
   }
   @include max-screen($mobile-break-point) {
-     font-size: 1.6rem;
+     font-size: 1.5rem;
      padding: 10px;
+     /deep/ .newline {
+      display: block;
+    }
   }
   }
 </style>
@@ -104,7 +107,7 @@ export default {
             }
           ],
           frame: {
-            text: '報酬は頂きません。実費交通費のみご請求させていただきます。'
+            text: '報酬は頂きません。<span class="newline">実費交通費のみご請求させていただきます。</span>'
           }
         }
       }
