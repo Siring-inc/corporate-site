@@ -24,17 +24,16 @@ export default {
 <style lang="scss" scoped>
 .service-point {
   &__frame{
-    //  max-width: 55%;
-    //  margin: 0 auto;
-    margin-left: 87px;
+    max-width: 55%;
+    margin: 0 auto;
+    // margin-left: 87px;
     margin-bottom: 6.9rem;
     align-items: center;
     @include max-screen($tablet-break-point) {
-      // max-width: 75%;
+      max-width: 100%;
       margin-left: 10px;
     }
     @include max-screen($mobile-break-point) {
-      // max-width: 80%;
       margin-left: 0px;
     }
   }
