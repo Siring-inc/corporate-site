@@ -31,15 +31,18 @@ export default {
   background: $red;
   border-radius: 50%;
   box-sizing: border-box;
+  letter-spacing: 1px;
   @include max-screen($tablet-break-point) {
     margin: -0.1em -2px 5.5em -203px;
     width: 6rem;
     height: 6rem;
     line-height:1.2;
     font-size: 1rem;
+    letter-spacing: 0;
   }
   @include max-screen($mobile-break-point) {
     margin: -0.9em -2px 5.5em -169px;
+    letter-spacing: 0;
   }
   @include max-screen($small-mobile-break-point) {
     margin: -1.7rem -2px 5.5em -144px;
