@@ -6,9 +6,11 @@
           h1.message__main
             img(src="~assets/img/hero/message.png" alt="社会福祉法人のための記帳代行")
           p.message__text
-            | 複数の社会福祉法人のお客様や実際の会計監査の現場に多数立ち会うなど、
+            | 社会福祉法人 経理事務マニュアルに掲載されているように、
             br
-            | 社福会計専門だからこその知識と経験で法人様をサポートします。
+            | 職員による経理のマンパワーや専門知識の不足をシリングがサポートします。
+            br
+            | 今、話題の「経理の業務委託」で園児や利用者へ対する時間を増やしませんか。
       .hero__content
         ul.hero-menu
           li.hero-menu__item(v-for="(item, index) in menuItems" :key="index")
