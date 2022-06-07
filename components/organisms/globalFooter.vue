@@ -2,7 +2,7 @@
   footer.footer
     .footer__wrap
       .footer__nav
-        globalNav(:isWhite="true" :isSmall="true")
+        globalNavFooter(:isWhite="true" :isSmall="true")
       .footer__content
         .footer__left
           .footer__logo
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import globalNav from '~/components/molecules/globalNav'
+import globalNavFooter from '~/components/molecules/globalNavFooter'
 
 export default {
   components: {
-    globalNav
+    globalNavFooter
   }
 }
 </script>
