@@ -38,7 +38,7 @@ export default {
         },
         {
           link: '/privacy',
-          name: '個人情報'
+          name: '個人情報に関する取り扱い'
         }
       ]
     }
