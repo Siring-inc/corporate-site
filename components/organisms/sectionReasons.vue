@@ -35,6 +35,7 @@ export default {
       reasonItems: [
         {
           name: 'あいおい福祉会様',
+          area: '兵庫県相生市',
           category: '介護',
           image: 'img/reasons/aioi.png',
           title: '担当者にはもっとステップアップして欲しくてシリングを活用',
@@ -42,6 +43,7 @@ export default {
         },
         {
           name: '豊中太陽会様',
+          area: '大阪府豊中市',
           category: '障害',
           image: 'img/reasons/taiyo.png',
           title:
@@ -58,6 +60,7 @@ export default {
         },
         {
           name: 'ひまわり園様',
+          area: '大阪府羽曳野市',
           category: '障害',
           image: 'img/reasons/himawari.png',
           title: '現状の現場に寄り添ってもらいたくてシリングさんを活用',
