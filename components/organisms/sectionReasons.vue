@@ -11,6 +11,8 @@
         ul.reason-list
           li.reason-list__item.reason-panel(v-for="(item, index) in reasonItems" :key="index" :class="{'reason-panel--mirror': (parseInt(index + 1) % 2) === 0}")
             .reason-panel__header
+              .reason-panel__area 
+                | {{item.area}}
               .reason-panel__name
                 | {{item.name}}
               .reason-panel__category
@@ -48,6 +50,7 @@ export default {
         },
         {
           name: '楽山会様',
+          area: '長崎県島原市',
           category: '介護',
           image: 'img/reasons/rakuzan.png',
           title: '積極的に外部委託を取り入れている中、会計業務の外部委託はじめました。',
@@ -165,6 +168,13 @@ export default {
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  &__area {
+    margin-right: 20px;
+    @include max-screen($mobile-break-point) {
       margin-right: 0;
       margin-bottom: 10px;
     }
