@@ -17,7 +17,7 @@ div
           .contact-tel
             .contact-tel__wrap
               .contact-tel__number
-                | 06-6339-7477
+                | 06-6949-8303
               .contact-tel__note
                 | お電話での受付時間は、平日AM10:00～PM5:00までです。
 </template>
