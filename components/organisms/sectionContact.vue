@@ -23,7 +23,7 @@
                       | TEL
                   .contact-item__content
                     .contact-item__number
-                      | 06-6339-7477
+                      | 06-6949-8303
               .contact-list__item
                 .contact-item
                   .contact-item__header
@@ -32,7 +32,7 @@
                       | FAX
                   .contact-item__content
                     .contact-item__number
-                      | 06-6339-7286
+                      | 06-6949-8304
 
 
 </template>

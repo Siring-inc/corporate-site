@@ -8,9 +8,9 @@
           .company-info
             .company-info__left
               .company-info__address
-                | 〒564-0063
+                | 〒530-0041
                 br
-                | 大阪府吹田市江坂町1-14-33 TCSビル６F
+                | 大阪市北区天神橋2丁目北2-25 タキガワビル404号
             .company-info__right
               .company-tell
                 .company-tell__item
@@ -18,13 +18,13 @@
                     .tell__label
                       | TEL
                     .tell__number
-                      | 06-6339-7477
+                      | 06-6949-8303
                 .company-tell__item
                   .tell
                     .tell__label
                       | FAX
                     .tell__number
-                      | 06-6339-7286
+                      | 06-6949-8304
 
       .global-header__inner
         nav.global-header__gnav

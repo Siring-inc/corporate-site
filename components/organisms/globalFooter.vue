@@ -8,9 +8,9 @@
           .footer__logo
             img(src="~assets/img/logo/logo-white.png" alt="株式会社シリング")
           .footer__address
-            | 〒564-0063
+            | 〒530-0041
             br
-            | 大阪府吹田市江坂町1-14-33 TCSビル６F
+            | 大阪市北区天神橋2丁目北2-25 タキガワビル404号
         .footer__right
           small.footer__copy
             | Copyright © 2017   Siring   All Rights Reserved.
