@@ -21,25 +21,28 @@ export default {
   display: inline-block;
   margin: -0.9em -2px 5.5em -254px;
   padding: 1.7rem 0.5rem;
-  width: 7rem;
-  height: 7rem;
-  line-height:1.3rem;
+  width: 75px;
+  height: 75px;
+  line-height:1.4;
   text-align: center;
   color: #FFF;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   background: $red;
   border-radius: 50%;
   box-sizing: border-box;
+  letter-spacing: 1px;
   @include max-screen($tablet-break-point) {
     margin: -0.1em -2px 5.5em -203px;
     width: 6rem;
     height: 6rem;
-    line-height:1rem;
+    line-height:1.2;
     font-size: 1rem;
+    letter-spacing: 0;
   }
   @include max-screen($mobile-break-point) {
     margin: -0.9em -2px 5.5em -169px;
+    letter-spacing: 0;
   }
   @include max-screen($small-mobile-break-point) {
     margin: -1.7rem -2px 5.5em -144px;
@@ -61,8 +64,8 @@ export default {
     right: -15px;
   }
   @include max-screen($mobile-break-point) {
-    bottom: 4px;
-    right: -14px;
+    bottom: 1px;
+    right: -16px;
     transform: rotate(38deg);
   }
   @include max-screen($small-mobile-break-point) {

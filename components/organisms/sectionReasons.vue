@@ -11,6 +11,8 @@
         ul.reason-list
           li.reason-list__item.reason-panel(v-for="(item, index) in reasonItems" :key="index" :class="{'reason-panel--mirror': (parseInt(index + 1) % 2) === 0}")
             .reason-panel__header
+              .reason-panel__area 
+                | {{item.area}}
               .reason-panel__name
                 | {{item.name}}
               .reason-panel__category
@@ -33,6 +35,7 @@ export default {
       reasonItems: [
         {
           name: 'あいおい福祉会様',
+          area: '兵庫県相生市',
           category: '介護',
           image: 'img/reasons/aioi.png',
           title: '担当者にはもっとステップアップして欲しくてシリングを活用',
@@ -47,6 +50,7 @@ export default {
         },
         {
           name: '豊中太陽会様',
+          area: '大阪府豊中市',
           category: '障害',
           image: 'img/reasons/taiyo.png',
           title:
@@ -54,14 +58,16 @@ export default {
           desc: `監事が公認会計士なので、監査時の確認事項にもしっかり対応できるよう、会計担当者が気軽に質問できるセカンドオピニオンの役割も期待してシリングさんにお願いしました。`
         },
         {
-          name: '太子福祉会様',
-          category: '保育・介護',
-          image: 'img/reasons/taishi.png',
-          title: '会計責任者が育児休暇に入る間のサポートとして活用',
-          desc: `会計責任者が育児休暇に入る間のサポートをお願いしたくて依頼しました。<br />現場の経理担当者の相談相手にもなっていただき、助かっています。`
+          name: '楽山会様',
+          area: '長崎県島原市',
+          category: '介護',
+          image: 'img/reasons/rakuzan.png',
+          title: '積極的に外部委託を取り入れている中、会計業務の外部委託はじめました。',
+          desc: `シリングのことはYouTubeで知りました。<br>長崎と大阪の距離の差は気になりましたが、コロナ渦で進んだWeｂ会議サービスの活用も視野に入れ外部委託を決意しました。<br>比較対象がなく、必要以上に手間暇をかけてしまっていた経理業務の慣習を相談しながら少しずつご合理的に修正してもらっています。`
         },
         {
           name: 'ひまわり園様',
+          area: '大阪府羽曳野市',
           category: '障害',
           image: 'img/reasons/himawari.png',
           title: '現状の現場に寄り添ってもらいたくてシリングさんを活用',
@@ -172,6 +178,13 @@ export default {
     }
     @include max-screen($mobile-break-point) {
       font-size: 2.4rem;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  &__area {
+    margin-right: 20px;
+    @include max-screen($mobile-break-point) {
       margin-right: 0;
       margin-bottom: 10px;
     }
