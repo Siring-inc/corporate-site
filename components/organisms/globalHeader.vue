@@ -10,7 +10,7 @@
               .company-info__address
                 | 〒530-0041
                 br
-                | 大阪市北区天神橋2丁目北2-25 タキガワビル404号
+                | 大阪市北区天神橋2丁目北2-25 タキガワビル306号
             .company-info__right
               .company-tell
                 .company-tell__item
