@@ -10,7 +10,7 @@
           .footer__address
             | 〒530-0041
             br
-            | 大阪市北区天神橋2丁目北2-25 タキガワビル404号
+            | 大阪市北区天神橋2丁目北2-25 タキガワビル306号
         .footer__right
           small.footer__copy
             | Copyright © 2017   Siring   All Rights Reserved.
