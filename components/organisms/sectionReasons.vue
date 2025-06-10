@@ -43,6 +43,7 @@ export default {
         },
         {
           name: '二見中央福祉会様',
+          area: '千葉県柏市',
           category: '保育',
           image: 'img/reasons/hutami.png',
           title: '保育園のお仕事は書類仕事が多い！',
